@@ -8,7 +8,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    background: linear-gradient(135deg, #001aff 0%, #000000 100%);
+    background: conic-gradient(#ffbb00 40%, black 60%);
 }
 
 .container {
@@ -18,37 +18,37 @@ body {
 }
 
 header {
-    background: rgba(255, 255, 255, 0.95);
+    background: conic-gradient(#ffbb00 49%, black 51%);
     padding: 60px 20px;
     text-align: center;
     margin-bottom: 30px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 5px #ffbb00;
 }
 
 h1 {
     font-size: 3em;
-    color: #132161;
+    color: #ffffff;
     margin-bottom: 10px;
 }
 
 .subtitle {
     font-size: 1.3em;
-    color: #666;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
 nav {
-    background: rgba(255, 255, 255, 0.95);
+    background: conic-gradient(#ffbb00 49%, black 51%);
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 30px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px #ffbb00;
 }
 
 nav a {
-    color: #132161;
+    color: #000000;
     text-decoration: none;
     padding: 10px 20px;
     margin: 0 5px;
@@ -58,8 +58,8 @@ nav a {
 }
 
 nav a:hover {
-    background: #132161;
-    color: white;
+    background: #ffbb00;
+    color: rgb(0, 0, 0);
 }
 
 .section {
@@ -71,18 +71,34 @@ nav a:hover {
 }
 
 h2 {
-    color: #667eea;
+    color: #000000;
     font-size: 2.5em;
     margin-bottom: 30px;
-    border-bottom: 3px solid #08004e;
+    border-bottom: 3px solid #000000;
     padding-bottom: 10px;
 }
 
 h3 {
-    color: #08004e;
+    color: #000000;
     font-size: 1.5em;
     margin-top: 25px;
     margin-bottom: 15px;
+}
+
+p {
+    font-size: 20px;
+}
+
+video {
+    object-fit: cover;
+    border-radius: 100px
+}
+
+img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 50px;
 }
 
 .about-grid {
@@ -93,7 +109,7 @@ h3 {
 }
 
 .about-card {
-    background: linear-gradient(135deg, #132161 0%, #3a1263 100%);
+    background: black;
     padding: 25px;
     border-radius: 10px;
     color: white;
@@ -128,7 +144,7 @@ h3 {
     padding: 25px;
     margin-bottom: 20px;
     border-radius: 10px;
-    border-left: 5px solid #132161;
+    border-left: 5px solid #000000;
     transition: transform 0.3s;
 }
 
@@ -157,7 +173,7 @@ h3 {
 }
 
 .skill-card {
-    background: linear-gradient(135deg, #132161 0%, #000c41 100%);
+    background: black;
     padding: 20px;
     border-radius: 10px;
     color: white;
@@ -186,7 +202,7 @@ h3 {
 }
 
 .cert-card h3 {
-    color: #132161;
+    color: #000000;
     margin: 0;
 }
 
@@ -199,7 +215,7 @@ h3 {
 }
 
 .contact {
-    background: linear-gradient(135deg, #132161 0%, #764ba2 100%);
+    background: black;
     color: white;
     padding: 15px 30px;
     border-radius: 10px;
@@ -211,6 +227,24 @@ h3 {
 .contact:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.download {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.download-item {
+    background: black;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.3s;
+    font-weight: bold;
 }
 
 footer {
@@ -241,5 +275,6 @@ footer {
 
     .active {
         padding: 30px;
+        color: white;
     }
 }
