@@ -82,6 +82,144 @@ const experienceDetails = {
 	}
 };
 
+const researchDetails = {
+	"fsu-young-scholars": {
+		title: "FSU Young Scholars Program",
+		intro: "Use this detail view to expand the perovskite LED research into a deeper story. Replace this text with the research question, lab context, materials studied, methods used, and what you presented.",
+		heroImage: "reference_files/IRP_Poster_Photo.jpg",
+		heroAlt: "Presenting research poster at the FSU Young Scholars Program",
+		facts: [
+			["Research Area", "Perovskites, materials science, and LED applications."],
+			["Mentor / Lab", "Professor Biwu Ma, Biochemistry Department."],
+			["Impact to Fill In", "Add poster title, experiment result, material behavior, or presentation outcome here."]
+		],
+		panels: [
+			["Research Question", "Describe what you were trying to understand about perovskites or LED applications."],
+			["Methods", "Explain lab methods, x-ray diffraction work, sample preparation, analysis, or presentation workflow."],
+			["Outcome", "Summarize what you learned, presented, measured, or contributed to the research effort."]
+		],
+		visuals: [
+			{ image: "reference_files/IRP_Poster_Photo.jpg", alt: "FSU research poster presentation", caption: "Add poster title, audience, and the main research conclusion." },
+			{ image: "reference_files/Me n Jarek.jpeg", alt: "In the lab with a fellow researcher", caption: "Add context about lab work, collaboration, or experimental setup." },
+			{ placeholder: "Add x-ray diffraction result, material image, or thesis slide", caption: "Use this slot for data visuals or another research artifact." }
+		],
+		timeline: [
+			["Context", "Add program timeline, lab placement, and research motivation."],
+			["Experiment", "Add the materials, tools, and methods used."],
+			["Presentation", "Add thesis or poster details and audience."],
+			["Takeaway", "Add the materials science or research skills you gained."]
+		]
+	},
+	"opa": {
+		title: "Original Polyoculus Assembly (OPA)",
+		intro: "Use this detail view to explain the telescope assembly work, roof design, enclosure constraints, and support structure. Replace this placeholder with project scope and approved technical details.",
+		heroImage: "reference_files/EikenberryConnex.png",
+		heroAlt: "OPA telescoping assembly design render",
+		facts: [
+			["Research Area", "Astrophysics, optics, photonics, and mechanical design."],
+			["Mentor / Lab", "Professor Eikenberry, CREOL Department at UCF."],
+			["Impact to Fill In", "Add design responsibility, CAD contribution, or build milestone here."]
+		],
+		panels: [
+			["Problem", "Describe the telescope assembly, enclosure, deployment, and roof support challenge."],
+			["Approach", "Explain your roof design, support structure thinking, CAD workflow, and constraints."],
+			["Result", "Summarize the design output, review status, or how it supported the assembly project."]
+		],
+		visuals: [
+			{ image: "reference_files/Eikenberry Connex Box.jpg", alt: "OPA telescoping assembly connex enclosure", caption: "Add what this enclosure photo shows and how it relates to the assembly." },
+			{ image: "reference_files/EikenberryConnex.png", alt: "OPA design render", caption: "Add CAD, roof, or deployment notes for this visual." },
+			{ placeholder: "Add roof design sketch, support diagram, or deployment visual", caption: "Use this slot for a diagram that explains the mechanical design." }
+		],
+		timeline: [
+			["Context", "Add the telescope assembly goal and operating constraints."],
+			["Design", "Add roof, support, CAD, and structural considerations."],
+			["Review", "Add feedback, iteration, or next-step details."],
+			["Takeaway", "Add what you learned about optics-related mechanical systems."]
+		]
+	},
+	"asrl": {
+		title: "Astrodynamics, Space, and Robotics Lab (ASRL)",
+		intro: "Use this detail view to expand on orbital path efficiency work, ROSS, and electronics housing drawings. Replace this text with project context, your responsibilities, and visuals that explain the research system.",
+		heroImage: "reference_files/Screenshot 2024-11-03 170241.png",
+		heroAlt: "ASRL electronics housing drawing",
+		facts: [
+			["Research Area", "Astrodynamics, orbital path efficiency, robotics support hardware."],
+			["Mentor / Lab", "Professor Elgohary, Aerospace Engineering Department at UCF."],
+			["Impact to Fill In", "Add drawing output, analysis contribution, or hardware support result here."]
+		],
+		panels: [
+			["Problem", "Describe the orbital efficiency or electronics housing challenge."],
+			["Approach", "Explain ROSS usage, drawing support, CAD decisions, or requirements you worked from."],
+			["Result", "Summarize the research or design output and how it supported lab work."]
+		],
+		visuals: [
+			{ image: "reference_files/Screenshot 2024-11-03 170241.png", alt: "ASRL electronics housing drawing", caption: "Add notes about the housing drawing and design purpose." },
+			{ placeholder: "Add ROSS workflow, orbital path plot, or simulation visual", caption: "Use this slot for orbital analysis or software workflow visuals." },
+			{ placeholder: "Add electronics housing revision, requirement sketch, or final render", caption: "Show how the design evolved or what constraints guided it." }
+		],
+		timeline: [
+			["Context", "Add lab objective and research scope."],
+			["Analysis", "Add ROSS, orbital path, or drawing workflow details."],
+			["Output", "Add deliverables, drawings, or review outcomes."],
+			["Takeaway", "Add skills gained in aerospace research and technical drawing."]
+		]
+	},
+	"nanoelectronics": {
+		title: "Nanophysics and Nanoelectronics Group",
+		intro: "Use this detail view to explain the quantum materials work, CVD growth, transfer stage, poster presentations, and future ML height-profile scripts. Replace this with lab-safe technical detail and results.",
+		heroImage: "reference_files/PREM_PosterBoard1.jpg",
+		heroAlt: "Poster board on thinning nanomaterials and bulk transfer of CVD-grown molybdenum disulfide",
+		facts: [
+			["Research Area", "Quantum materials, CVD-grown molybdenum disulfide, transfer stages, ML image analysis."],
+			["Mentor / Lab", "Professor Khondaker, Physics Department at UCF."],
+			["Impact to Fill In", "Add poster result, device workflow, transfer-stage result, or ML goal here."]
+		],
+		panels: [
+			["Problem", "Describe the material growth, transfer, thinning, or measurement challenge."],
+			["Approach", "Explain CVD growth, PC/PDMS transfer, cartridge heaters, PID control, or ML workflow."],
+			["Result", "Summarize poster findings, lab capability, device progress, or model goals."]
+		],
+		visuals: [
+			{ image: "reference_files/PREM_PosterBoard1.jpg", alt: "Nanomaterials poster board", caption: "Add poster topic, result, and presentation context." },
+			{ image: "reference_files/Vapor Method.jpeg", alt: "Vapor method lab visual", caption: "Add how this method relates to growth or transfer work." },
+			{ placeholder: "Add transfer stage, microscope image, or ML height-profile visual", caption: "Use this slot for process photos, data, or model outputs." }
+		],
+		timeline: [
+			["Context", "Add lab goal and material system."],
+			["Fabrication", "Add CVD, transfer stage, heater, polymer, or controller details."],
+			["Analysis", "Add poster findings, measurements, or ML workflow."],
+			["Takeaway", "Add research skills in nanomaterials, controls, and computation."]
+		]
+	},
+	"perl": {
+		title: "Propulsion and Energy Research Lab (PERL)",
+		intro: "Use this detail view to expand the combustion chamber, flashback, measurement software, Cantera scripts, condition calculator, and manufacturing work. Replace this placeholder with the project story and strongest visuals.",
+		heroImage: "reference_files/AxialCombustionChamber.png",
+		heroAlt: "Axial Stage Combustion Chamber hardware",
+		facts: [
+			["Research Area", "Propulsion, combustion, hydrogen flashback, emissions, measurement software."],
+			["Mentor / Lab", "Professor Kareem Ahmed, Aerospace Engineering Department at UCF."],
+			["Impact to Fill In", "Add calculator result, test support impact, manufacturing contribution, or software metric here."]
+		],
+		panels: [
+			["Problem", "Describe the facility-condition, combustion, measurement, or manufacturing challenge."],
+			["Approach", "Explain Cantera scripts, condition calculator logic, GUI support, calculations, or assembly work."],
+			["Result", "Summarize the validated calculations, testing support, data workflow, or production improvement."]
+		],
+		visuals: [
+			{ image: "reference_files/AxialCombustionChamber.png", alt: "Axial Stage Combustion Chamber hardware", caption: "Add what this hardware shows and your role in the project." },
+			{ image: "reference_files/SCC_GUI.png", alt: "Measurement software GUI", caption: "Add what the software measures and how it supports testing." },
+			{ placeholder: "Add condition calculator screenshot, Cantera plot, or assembly photo", caption: "Use this slot for code output, calculations, emissions plots, or manufacturing visuals." }
+		],
+		timeline: [
+			["Context", "Add project objective, facility requirements, and research scope."],
+			["Build", "Add calculator, software, Cantera, or manufacturing details."],
+			["Validation", "Add how calculations, measurements, or hardware were checked."],
+			["Takeaway", "Add propulsion, testing, software, and manufacturing skills gained."]
+		]
+	}
+};
+
 function escapeHtml(value) {
 	return value.replace(/[&<>"]/g, (character) => ({
 		"&": "&amp;",
@@ -199,16 +337,114 @@ function showExperienceList() {
 	}
 }
 
+function showResearchDetail(key) {
+	const detail = researchDetails[key];
+	const researchSection = document.querySelector("#research");
+	const detailView = document.querySelector("#research-detail-view");
+
+	if (!detail || !researchSection || !detailView) {
+		return;
+	}
+
+	detailView.innerHTML = `
+		<button class="back-link" type="button" data-back-to-research>Go Back to Main Page</button>
+
+		<div class="experience-detail-hero">
+			<div>
+				<span class="eyebrow">Research Detail</span>
+				<h2>${escapeHtml(detail.title)}</h2>
+				<p class="detail-lede">${escapeHtml(detail.intro)}</p>
+			</div>
+			<div class="detail-hero-media">
+				<img src="${escapeHtml(detail.heroImage)}" alt="${escapeHtml(detail.heroAlt)}">
+			</div>
+		</div>
+
+		<div class="detail-summary-grid">
+			${renderFacts(detail.facts)}
+		</div>
+
+		<div class="detail-section-grid">
+			${renderPanels(detail.panels)}
+		</div>
+
+		<h3>Visuals to Add</h3>
+		<div class="visual-board">
+			${renderVisuals(detail.visuals)}
+		</div>
+
+		<h3>Work Breakdown</h3>
+		<ul class="detail-timeline">
+			${renderTimeline(detail.timeline)}
+		</ul>
+
+		<div class="detail-footer-action">
+			<button class="back-link" type="button" data-back-to-research>Go Back to Main Page</button>
+		</div>
+	`;
+
+	researchSection.classList.add("experience-list-hidden");
+	detailView.hidden = false;
+	window.location.hash = key;
+	researchSection.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function showResearchList() {
+	const researchSection = document.querySelector("#research");
+	const detailView = document.querySelector("#research-detail-view");
+
+	if (!researchSection || !detailView) {
+		return;
+	}
+
+	researchSection.classList.remove("experience-list-hidden");
+	detailView.hidden = true;
+	detailView.innerHTML = "";
+
+	if (window.location.hash) {
+		history.pushState("", document.title, window.location.pathname + window.location.search);
+	}
+}
+
 document.addEventListener("click", (event) => {
 	const detailButton = event.target.closest("[data-experience]");
+	const researchButton = event.target.closest("[data-research]");
 	const backButton = event.target.closest("[data-back-to-experience]");
+	const researchBackButton = event.target.closest("[data-back-to-research]");
 
 	if (detailButton) {
 		showExperienceDetail(detailButton.dataset.experience);
 	}
 
+	if (researchButton) {
+		showResearchDetail(researchButton.dataset.research);
+	}
+
 	if (backButton) {
 		showExperienceList();
+	}
+
+	if (researchBackButton) {
+		showResearchList();
+	}
+});
+
+document.addEventListener("keydown", (event) => {
+	if (event.key !== "Enter" && event.key !== " ") {
+		return;
+	}
+
+	const detailCard = event.target.closest(".experience-item[data-experience]");
+	const researchCard = event.target.closest(".experience-item[data-research]");
+
+	if (detailCard) {
+		event.preventDefault();
+		showExperienceDetail(detailCard.dataset.experience);
+	}
+
+	if (researchCard) {
+		event.preventDefault();
+		showResearchDetail(researchCard.dataset.research);
 	}
 });
 
@@ -217,5 +453,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
 	if (key && experienceDetails[key]) {
 		showExperienceDetail(key);
+	}
+
+	if (key && researchDetails[key]) {
+		showResearchDetail(key);
 	}
 });

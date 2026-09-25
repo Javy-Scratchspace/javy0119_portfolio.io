@@ -343,6 +343,11 @@ li {
     transform: translateX(6px);
 }
 
+.experience-item[data-experience],
+.experience-item[data-research] {
+    cursor: pointer;
+}
+
 .experience-item h3 {
     margin-top: 0;
 }
@@ -424,7 +429,7 @@ li {
 }
 
 /* ---------------------------------------------------------------------- */
-/* Experience detail pages                                                */
+/* Experience and research detail views                                   */
 /* ---------------------------------------------------------------------- */
 
 .experience-detail-hero {
