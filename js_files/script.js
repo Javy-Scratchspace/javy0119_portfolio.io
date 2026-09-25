@@ -1,83 +1,76 @@
 const experienceDetails = {
 	"well-bilt": {
 		title: "Engineering Intern - Well Bilt Industries",
-		intro: "Use this detail view to expand the short experience card into a deeper case study. Replace this intro with project context, your responsibilities, and the engineering or automation impact you want recruiters to remember.",
-		heroImage: "reference_files/Risa Strctural Analysis.jpeg",
-		heroAlt: "RISA structural analysis model of a hangar door beam",
-		facts: [
+		logo: "reference_files/WellBiltLogo.png",
+        intro: "This internship focused on building hangar doors and developing tools to help engineers. During this internship, I worked with SolidWorks to generate drawings, Risa to conduct analyses that determine if the door panels can withstand wind loads, python to build automation tools, Beamline to generate commands for machines to drill out hangar door beams, and Messer Nesting to develop laser cut metal parts. I worked with customers and Engineers to ensure that the product is delivered in a satisfactory way, ensuring that not only the technical requirements were met, but also the desired layout of the project is handled properly.",
+        facts: [
 			["Role", "Engineering Intern"],
 			["Focus Areas", "Python automation, RISA modeling, SolidWorks drawings, manufacturing support."],
-			["Impact to Fill In", "Add the strongest metric, result, or production improvement here."]
+			["Main Impact Points", "Developed Python automation tools that reduced time to produce cut lists for client projects by 47%.", "Worked on client project models using SolidWorks and developed manufacturing-ready drawings.", "Worked with Engineers and clients to ensure satisfaction across all fields.", "Assisted in the manufacturing of laser cut parts and beams by producing files that assist machines in producing these parts, reducing time to produce client requests by 12%."]
 		],
 		panels: [
-			["Problem", "Describe the bottleneck, manual process, or engineering challenge. Include who it affected and why it mattered."],
-			["Approach", "Explain the tools, calculations, scripts, CAD workflow, or analysis method you used to solve it."],
-			["Result", "Summarize the measurable outcome, time saved, accuracy gained, or production workflow improvement."]
+			["Problem", "Clients building their hangars need doors capable of withstanding the thermal stresses and wind speeds quoted for their location."],
+			["Approach", "SolidWorks: Build hangar door models to develop manufacturing-ready drawings.", "Beamline: Produce files that give orders to machine on where to drill holes to attach clips.", "Messer Nesting: Make laster cut metal parts that are used for clips for connecting hangar doors and other parts that are helpful for helping employees keep track of material."],
+			["Result", "Clients get satisfied results that are long-term affordable solutions in reduced time."]
 		],
 		visuals: [
-			{ image: "reference_files/Python Cut List.jpeg", alt: "Python cut list automation example", caption: "Replace or expand this caption with what the automation shows and why it mattered." },
-			{ image: "reference_files/General Door Calcs Excel Sheet.jpeg", alt: "Excel door calculation sheet example", caption: "Add notes about the Excel calculation tool, inputs, outputs, and engineering checks." },
-			{ placeholder: "Add SolidWorks drawing, model screenshot, or finished door photo", caption: "Use this slot for another image, video, chart, or before-and-after comparison." }
+			{ image: "reference_files/Python Cut List.jpeg", alt: "Python cut list automation example", caption: "Automated cut list program that displays the results after performing a merge and split of beam orders to maintain beam length orders (normally 20') and ensure all materials are ordered." },
+			{ image: "reference_files/General Door Calcs Excel Sheet.jpeg", alt: "Excel door calculation sheet example", caption: "Developed an Excel database that takes in door dimensions and panel count and spits out the Risa file best used to copy from. Also conducts calculations given wind speed and determines if the panel with the dimensions can handle the stresses." },
+			{ image: "reference_files/Risa Strctural Analysis.jpeg", alt: "Risa Structural Analysis grid points example", caption: "Example of hangar door via Risa Structural Analysis program. These grid points define beam connections where beams are connected via clips. The software produces a visual that shows the doors weakest and strongest points." },
+            { image: "reference_files/WellBiltFinalResult.png", alt: "Final Door Design Example", caption: "Example of a biparting hangar door being finally built."}
 		],
 		timeline: [
-			["Context", "Add project background, team, constraints, and timeline."],
-			["Build", "Add implementation details, scripts, formulas, modeling assumptions, or CAD decisions."],
-			["Validation", "Add how you checked accuracy, reviewed outputs, or confirmed the result with engineers."],
-			["Takeaway", "Add what this experience taught you technically or professionally."]
+			["Build", "Use Risa to ensure hangar door beams handle the wind loads with a sufficient safety factor fo 10, SolidWorks to develop the drawings and ensure fast manufacturing processes, and Excel to develop cut lists necessary for building hangar doors."],
+			["Validation", "Validated Risa calculations by determining wind loads at the center point of each door frame and hand calculating the deflections."],
+			["Takeaway", "I learned how to take a design from concept to reality. I was able to assist and epedite the design and manufacturing processes for building client solutions while also building automation tools that assist engineers in purchasing materials by reducing time to generate cut lists by 47%."]
 		]
 	},
 	"code-meets-bagel": {
 		title: "Software Developer - Code Meets Bagel",
-		intro: "Use this detail view to document the Slack bot, AI API integrations, deployment workflow, and product decisions. Replace this text with the user problem, what you built, and the most important technical outcomes.",
-		heroImage: "reference_files/CBM_LOGO.png",
-		heroAlt: "Code Meets Bagel logo",
+        logo: "reference_files/cmb.jpg",
+        intro: "As an intern for Code Meets Bagel, I focused on developing proper documentation for an AI Slack Bot. I also helped in the development and testing of the AI. The purpose of this bot was to help a marketing team build marketing solution by integrating AI with other marketing software platforms.",
 		facts: [
 			["Role", "Software Developer"],
-			["Focus Areas", "Python, Slack bot development, AI APIs, GitHub workflows, deployment."],
-			["Impact to Fill In", "Add usage metrics, product impact, reliability improvements, or team workflow gains here."]
+			["Focus Areas", "Python, Slack bot development, Claude/OpenAI APIs, GitHub workflows, deployment."],
+			["Main Impact Points", "Managed testing infrastructure across several different Slack bots.", "Handled heirarchy of Slack bot communication.", "Implemented a method to decrease token usage by 11%."]
 		],
 		panels: [
-			["Problem", "Describe the workflow the bot improved, the audience, and what made the task difficult before automation."],
-			["Approach", "Explain the bot architecture, API calls, prompts, event handling, deployment setup, and any safeguards."],
-			["Result", "Summarize the finished feature set, how it was used, and the skills or engineering judgment it demonstrated."]
+			["Problem", "A marketing team needed a bot that was capable of producing ads based on team requests."],
+			["Approach", "Slack: The framework where the bots were developed. Here, team members could interact with different bots and make requests for ad generation. The bot would develop a response and our program would parse it to determine what task was needed to be completed and how.", "OpenAI/Claude API: Used to handle bot queries to large language AI models (LLM).", "Python: The language that the Slack bots were built on. Using Python, I was able to develop test files that would test for different scenarios that the marketing team would come up with. Several runs were conducted to see what prompt would be most beneficial for explaining the role to the AI."],
+			["Result", "A Slack bot integrated with AI thats capable of handling consumer queries and breaking down what needs are to be met, how they need to be met, and what commands must be called."]
 		],
 		visuals: [
-			{ image: "reference_files/cmb.jpg", alt: "Code Meets Bagel visual reference", caption: "Replace this caption with what the visual represents: app flow, team brand, or bot behavior." },
-			{ placeholder: "Add Slack bot screenshot or interaction flow", caption: "Use this slot for a conversation screenshot, feature demo, or architecture diagram." },
-			{ placeholder: "Add API architecture, prompt flow, or deployment graphic", caption: "Show the technical system in a way that is quick for recruiters to scan." }
-		],
+        ],
 		timeline: [
-			["Context", "Add product goal, users, technical constraints, and team workflow."],
-			["Build", "Add bot commands, event handling, Python modules, API providers, and deployment steps."],
-			["Validation", "Add testing steps, demo process, error handling, or feedback loop."],
-			["Takeaway", "Add what this experience taught you about AI integrations and production software."]
+			["Build", "Create a simple bot within Slack capable of handling user mentions. Then, integrate the bot with AI so that the bot can handle regular conversations with a human."],
+			["Validation", "To validate, simply set up tests that are common scenarios for the team and run it with either different role descriptions or prompting that is said different but conveys the same message to understand how the bot will react and what the best response is."],
+			["Takeaway", "This experience was my introduction to API calls. Thanks to this experience, I not only understand how API calls work, but can also use this informaiton to build software that requires outsourcing of data or making calls to an AI. I was able to successfully build my own AI Discord chat bot that helps me with homework and general queries."]
 		]
 	},
 	"lockheed-martin": {
 		title: "Systems Engineer - Lockheed Martin",
-		intro: "Use this detail view as a portfolio-safe template for systems engineering work. Replace this intro with approved, non-sensitive descriptions of tools, responsibilities, plugin work, modeling workflows, and lessons learned.",
+		logo: "reference_files/lm_logo.jpg",
+		intro: "As a Systems Engineer with Lockheed Martin working under the ARISE Modeling Based Systems Engineering (MBSE) team, I focused on using Cameo to model stakeholder projects and Python to build automation projects within Cameo. I used Regex and AI based parsing to build a plugin that can parse code files for different project requirements. I implemented several methodologies and data structures to help automate the search and retrieval process of Cameo packages and GitLab files. Overall, I helped increase the productivity of the team members and of the stakeholders.",
 		heroImage: "reference_files/lm_logo.jpg",
 		heroAlt: "Lockheed Martin logo",
 		facts: [
 			["Role", "Systems Engineer"],
 			["Focus Areas", "Cameo Systems Modeler, plugin development, Python backend logic, C++ simulation review."],
-			["Impact to Fill In", "Add only approved metrics, workflow improvements, or generalized outcomes here."]
+			["Main Impact Points", "Add only approved metrics, workflow improvements, or generalized outcomes here."]
 		],
 		panels: [
-			["Problem", "Describe the modeling or workflow challenge in general terms, avoiding restricted details or proprietary system specifics."],
-			["Approach", "Explain the non-sensitive tools, modeling process, plugin responsibilities, and engineering practices you used."],
+			["Problem", "Other programs within Lockheed Martin need a way to model their projects such that others can read it well and it accurately describes what the project is focused on."],
+			["Approach", "Cameo Systems Modeler: Demonstrates how each part functions within a system and provides a friendly interface to model project integration.", "Jython: A mixture of Java and Python that works within Cameo. Its used to automate the Python-based framework."], "Consistently update the GitLab so that you and your peers can work alognside each other.",
 			["Result", "Summarize approved outcomes such as improved usability, clearer model operations, or stronger systems engineering fluency."]
 		],
 		visuals: [
-			{ placeholder: "Add approved Cameo workflow visual", caption: "Use sanitized diagrams, public screenshots, or your own recreated visuals only." },
-			{ placeholder: "Add plugin UI mockup or generalized architecture diagram", caption: "Show the kind of engineering interface or workflow you supported without sensitive details." },
-			{ placeholder: "Add skills matrix, process map, or timeline visual", caption: "This is a good place for visuals that explain your responsibilities at a high level." }
+			{ image: "reference_files/Python Logo.png", alt: "Python Logo", caption: "Python language was used to develop in-house plugins for other projects." },
+			{ image: "reference_files/CameoExample.png", alt: "Sample Cameo Pic", caption: "This is a sample project that models the components of a system and how they operate with each other." },
 		],
 		timeline: [
-			["Context", "Add approved background about the systems engineering environment and your team function."],
-			["Build", "Add generalized plugin, modeling, scripting, or simulation-support responsibilities."],
-			["Validation", "Add review processes, model checks, tool verification, or collaboration steps that are safe to share."],
-			["Takeaway", "Add what this experience taught you about large-scale engineering systems and disciplined documentation."]
+			["Build", "Built and assisted in the development of several plugins. Implemented different computer science techniques to help automate the process and reduce human error."],
+			["Validation", "Underwent testing fazes for different plugins, provided feedback on testing, and handeled AI conversations such that I optimized a prompt that reduces the token usage."],
+			["Takeaway", "Working for Lockheed Martin provided an insght into how the industry handles product development and testing. Throughout my time with my team, I have been needed to develop several documents that go into detail on what the plugin is and does and how the plugin works."]
 		]
 	}
 };
@@ -91,7 +84,7 @@ const researchDetails = {
 		facts: [
 			["Research Area", "Perovskites, materials science, and LED applications."],
 			["Mentor / Lab", "Professor Biwu Ma, Biochemistry Department."],
-			["Impact to Fill In", "Add poster title, experiment result, material behavior, or presentation outcome here."]
+			["Main Impact Points", "Add poster title, experiment result, material behavior, or presentation outcome here."]
 		],
 		panels: [
 			["Research Question", "Describe what you were trying to understand about perovskites or LED applications."],
@@ -118,7 +111,7 @@ const researchDetails = {
 		facts: [
 			["Research Area", "Astrophysics, optics, photonics, and mechanical design."],
 			["Mentor / Lab", "Professor Eikenberry, CREOL Department at UCF."],
-			["Impact to Fill In", "Add design responsibility, CAD contribution, or build milestone here."]
+			["Main Impact Points", "Add design responsibility, CAD contribution, or build milestone here."]
 		],
 		panels: [
 			["Problem", "Describe the telescope assembly, enclosure, deployment, and roof support challenge."],
@@ -145,7 +138,7 @@ const researchDetails = {
 		facts: [
 			["Research Area", "Astrodynamics, orbital path efficiency, robotics support hardware."],
 			["Mentor / Lab", "Professor Elgohary, Aerospace Engineering Department at UCF."],
-			["Impact to Fill In", "Add drawing output, analysis contribution, or hardware support result here."]
+			["Main Impact Points", "Add drawing output, analysis contribution, or hardware support result here."]
 		],
 		panels: [
 			["Problem", "Describe the orbital efficiency or electronics housing challenge."],
@@ -172,7 +165,7 @@ const researchDetails = {
 		facts: [
 			["Research Area", "Quantum materials, CVD-grown molybdenum disulfide, transfer stages, ML image analysis."],
 			["Mentor / Lab", "Professor Khondaker, Physics Department at UCF."],
-			["Impact to Fill In", "Add poster result, device workflow, transfer-stage result, or ML goal here."]
+			["Main Impact Points", "Add poster result, device workflow, transfer-stage result, or ML goal here."]
 		],
 		panels: [
 			["Problem", "Describe the material growth, transfer, thinning, or measurement challenge."],
@@ -199,7 +192,7 @@ const researchDetails = {
 		facts: [
 			["Research Area", "Propulsion, combustion, hydrogen flashback, emissions, measurement software."],
 			["Mentor / Lab", "Professor Kareem Ahmed, Aerospace Engineering Department at UCF."],
-			["Impact to Fill In", "Add calculator result, test support impact, manufacturing contribution, or software metric here."]
+			["Main Impact Points", "Add calculator result, test support impact, manufacturing contribution, or software metric here."]
 		],
 		panels: [
 			["Problem", "Describe the facility-condition, combustion, measurement, or manufacturing challenge."],
@@ -229,7 +222,7 @@ const projectDetails = {
 		facts: [
 			["Category", "Club leadership, propulsion, experimental rocketry."],
 			["Tools / Skills", "Heat transfer, bolt stress, thrust, impulse, chamber testing, payload-frame design."],
-			["Impact to Fill In", "Add static-fire result, design milestone, team contribution, or certification progress here."]
+			["Main Impact Points", "Add static-fire result, design milestone, team contribution, or certification progress here."]
 		],
 		panels: [
 			["Problem", "Describe the propulsion system goal, testing constraints, safety requirements, and team needs."],
@@ -256,7 +249,7 @@ const projectDetails = {
 		facts: [
 			["Category", "Club project, vehicle design, mechanical analysis."],
 			["Tools / Skills", "CAD, suspension hardware, tabs, spacers, maintenance stand design, FEA."],
-			["Impact to Fill In", "Add manufactured parts, FEA result, design approval, or car subsystem outcome here."]
+			["Main Impact Points", "Add manufactured parts, FEA result, design approval, or car subsystem outcome here."]
 		],
 		panels: [
 			["Problem", "Describe the vehicle or suspension design challenge, packaging limits, and loading conditions."],
@@ -283,7 +276,7 @@ const projectDetails = {
 		facts: [
 			["Category", "Student organization, leadership, outreach, project coordination."],
 			["Roles", "Projects Committee Payloads Team, ResearchSHPE Co-Director, Volunteer Director."],
-			["Impact to Fill In", "Add event attendance, volunteer hours, collaborations, or payload milestone here."]
+			["Main Impact Points", "Add event attendance, volunteer hours, collaborations, or payload milestone here."]
 		],
 		panels: [
 			["Problem", "Describe the student need, outreach goal, or project collaboration SHPE supported."],
@@ -310,7 +303,7 @@ const projectDetails = {
 		facts: [
 			["Category", "Personal engineering project, propulsion, instrumentation."],
 			["Tools / Skills", "C++, strain gauges, HX711 load scale, SolidWorks, propellant casting, test stand design."],
-			["Impact to Fill In", "Add thrust data, test count, formulation comparison, or measurement accuracy result here."]
+			["Main Impact Points", "Add thrust data, test count, formulation comparison, or measurement accuracy result here."]
 		],
 		panels: [
 			["Problem", "Describe the need for reliable thrust measurement and repeatable solid propellant testing."],
@@ -337,7 +330,7 @@ const projectDetails = {
 		facts: [
 			["Category", "Personal software project, AI-assisted analytics."],
 			["Tools / Skills", "Python, Tkinter, Google's Gemma AI model, market trend interpretation."],
-			["Impact to Fill In", "Add sample input, output insight, model behavior, or workflow result here."]
+			["Main Impact Points", "Add sample input, output insight, model behavior, or workflow result here."]
 		],
 		panels: [
 			["Problem", "Describe the advertising decision or market-analysis problem the tool helps solve."],
@@ -364,7 +357,7 @@ const projectDetails = {
 		facts: [
 			["Category", "Personal electromechanical project."],
 			["Tools / Skills", "Electromagnetic induction, 3D printing, mechanical integration, generator testing."],
-			["Impact to Fill In", "Add voltage output, prototype stage, print iteration, or bike integration result here."]
+			["Main Impact Points", "Add voltage output, prototype stage, print iteration, or bike integration result here."]
 		],
 		panels: [
 			["Problem", "Describe what electrical or mechanical requirement the generator needs to meet."],
@@ -391,7 +384,7 @@ const projectDetails = {
 		facts: [
 			["Category", "Personal robotics project."],
 			["Tools / Skills", "Arduino Uno R3, Raspberry Pi planning, remote control, mechanical design, embedded systems."],
-			["Impact to Fill In", "Add degrees of freedom, control mode, prototype stage, or demo result here."]
+			["Main Impact Points", "Add degrees of freedom, control mode, prototype stage, or demo result here."]
 		],
 		panels: [
 			["Problem", "Describe what motion, control, or manipulation task the arm is designed for."],
@@ -418,7 +411,7 @@ const projectDetails = {
 		facts: [
 			["Category", "Personal educational software project."],
 			["Tools / Skills", "Physics equations, calculus processes, input validation, interface logic."],
-			["Impact to Fill In", "Add supported modules, example solution, or learning outcome here."]
+			["Main Impact Points", "Add supported modules, example solution, or learning outcome here."]
 		],
 		panels: [
 			["Problem", "Describe the physics or calculus workflows the calculator makes easier to understand."],
@@ -445,7 +438,7 @@ const projectDetails = {
 		facts: [
 			["Category", "Personal Python data project."],
 			["Tools / Skills", "Python, Excel data, executable packaging, scatter plots, data cleaning."],
-			["Impact to Fill In", "Add dataset size, chart examples, packaging result, or workflow time saved here."]
+			["Main Impact Points", "Add dataset size, chart examples, packaging result, or workflow time saved here."]
 		],
 		panels: [
 			["Problem", "Describe the spreadsheet-to-visualization workflow this project simplifies."],
@@ -472,7 +465,7 @@ const projectDetails = {
 		facts: [
 			["Category", "Personal programming fundamentals projects."],
 			["Tools / Skills", "C, procedural programming, console interaction, simulation, business logic."],
-			["Impact to Fill In", "Add program features, input/output examples, or concepts practiced here."]
+			["Main Impact Points", "Add program features, input/output examples, or concepts practiced here."]
 		],
 		panels: [
 			["Problem", "Describe what each C program was built to practice or simulate."],
@@ -499,7 +492,7 @@ const projectDetails = {
 		facts: [
 			["Category", "Personal AI bot project."],
 			["Tools / Skills", "Discord bot development, AI assistance, server monitoring, code-assisted problem solving."],
-			["Impact to Fill In", "Add command count, server use case, response example, or engineering problem solved here."]
+			["Main Impact Points", "Add command count, server use case, response example, or engineering problem solved here."]
 		],
 		panels: [
 			["Problem", "Describe the student or server-management tasks the bot was meant to reduce."],
@@ -529,21 +522,24 @@ function escapeHtml(value) {
 	}[character]));
 }
 
-function renderFacts(facts) {
-	return facts.map(([label, value]) => `
-		<div class="detail-fact">
-			<strong>${escapeHtml(label)}</strong>
-			<p>${escapeHtml(value)}</p>
-		</div>
-	`).join("");
+function renderDetailValue(values) {
+	if (values.length <= 1) {
+		return `<p>${escapeHtml(values[0] || "")}</p>`;
+	}
+
+	return `
+		<ul class="detail-bullet-list">
+			${values.map((value) => `<li>${escapeHtml(value)}</li>`).join("")}
+		</ul>
+	`;
 }
 
-function renderPanels(panels) {
-	return panels.map(([title, text]) => `
-		<article class="detail-panel">
-			<h3>${escapeHtml(title)}</h3>
-			<p>${escapeHtml(text)}</p>
-		</article>
+function renderDetails(details) {
+	return details.map(([label, ...values]) => `
+		<div class="detail-fact">
+			<strong>${escapeHtml(label)}</strong>
+			${renderDetailValue(values)}
+		</div>
 	`).join("");
 }
 
@@ -578,6 +574,18 @@ function renderTimeline(timeline) {
 	`).join("");
 }
 
+function renderLogo(logoPath, title) {
+	if (!logoPath) {
+		return "";
+	}
+
+	return `
+		<div class="detail-logo-wrap">
+			<img class="detail-logo" src="${escapeHtml(logoPath)}" alt="${escapeHtml(title)} logo">
+		</div>
+	`;
+}
+
 function showExperienceDetail(key) {
 	const detail = experienceDetails[key];
 	const experienceSection = document.querySelector("#experience");
@@ -590,28 +598,28 @@ function showExperienceDetail(key) {
 	detailView.innerHTML = `
 		<button class="back-link" type="button" data-back-to-experience>Go Back to Main Page</button>
 
-		<div class="experience-detail-hero">
+		<div class="experience-detail-hero detail-hero-full">
 			<div>
 				<span class="eyebrow">Experience Detail</span>
 				<h2>${escapeHtml(detail.title)}</h2>
-				<p class="detail-lede">${escapeHtml(detail.intro)}</p>
-			</div>
-			<div class="detail-hero-media">
-				<img src="${escapeHtml(detail.heroImage)}" alt="${escapeHtml(detail.heroAlt)}">
+                ${renderLogo(detail.logo, detail.title)}
+                <p class="detail-lede">${escapeHtml(detail.intro)}</p>
 			</div>
 		</div>
 
-		<div class="detail-summary-grid">
-			${renderFacts(detail.facts)}
+        <h3>Visuals</h3>
+        <div class="visual-board">
+            ${renderVisuals(detail.visuals)}
+        </div>
+
+        <h3>Detailed Role</h3>
+		<div class="detail-summary-grid detail-stack">
+			${renderDetails(detail.facts)}
 		</div>
 
-		<div class="detail-section-grid">
-			${renderPanels(detail.panels)}
-		</div>
-
-		<h3>Visuals to Add</h3>
-		<div class="visual-board">
-			${renderVisuals(detail.visuals)}
+        <h3>Problem to Solution</h3>
+		<div class="detail-section-grid detail-stack">
+			${renderDetails(detail.panels)}
 		</div>
 
 		<h3>Work Breakdown</h3>
