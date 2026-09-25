@@ -220,8 +220,308 @@ const researchDetails = {
 	}
 };
 
+const projectDetails = {
+	"kxr": {
+		title: "Knights Experimental Rocketry - Propulsion Director",
+		intro: "Use this detail view to expand the propulsion director role into a project case study. Replace this text with launch goals, propulsion architecture, test milestones, team responsibilities, and approved photos or diagrams.",
+		heroImage: "reference_files/old_solidprop_test.mp4",
+		heroAlt: "Static fire test video for propulsion work",
+		facts: [
+			["Category", "Club leadership, propulsion, experimental rocketry."],
+			["Tools / Skills", "Heat transfer, bolt stress, thrust, impulse, chamber testing, payload-frame design."],
+			["Impact to Fill In", "Add static-fire result, design milestone, team contribution, or certification progress here."]
+		],
+		panels: [
+			["Problem", "Describe the propulsion system goal, testing constraints, safety requirements, and team needs."],
+			["Approach", "Explain chamber design, assembly management, calculations, static-fire preparation, and payload-frame work."],
+			["Result", "Summarize the test outcomes, design progress, lessons learned, or leadership impact."]
+		],
+		visuals: [
+			{ video: "reference_files/old_solidprop_test.mp4", caption: "Add what this static-fire or propulsion test demonstrates." },
+			{ image: "reference_files/SolidworksScale.jpeg", alt: "SolidWorks test stand model", caption: "Use this slot for propulsion-related CAD, tooling, or fixture work." },
+			{ placeholder: "Add chamber assembly photo, payload frame CAD, or thrust curve", caption: "Use this for the most recruiter-friendly visual proof of the project." }
+		],
+		timeline: [
+			["Context", "Add project mission, competition goal, or propulsion subsystem objective."],
+			["Design", "Add calculations, CAD, chamber assembly, and hardware decisions."],
+			["Test", "Add static-fire process, safety checks, data collected, and results."],
+			["Takeaway", "Add what the role taught you about propulsion leadership and testing discipline."]
+		]
+	},
+	"baja-sae": {
+		title: "Knights Racing BAJA SAE",
+		intro: "Use this detail view to expand the Baja SAE work into a mechanical design case study. Replace this intro with the subsystem, design constraints, manufacturing process, and competition relevance.",
+		heroImage: "reference_files/SolidworksScale.jpeg",
+		heroAlt: "CAD reference placeholder for mechanical design work",
+		facts: [
+			["Category", "Club project, vehicle design, mechanical analysis."],
+			["Tools / Skills", "CAD, suspension hardware, tabs, spacers, maintenance stand design, FEA."],
+			["Impact to Fill In", "Add manufactured parts, FEA result, design approval, or car subsystem outcome here."]
+		],
+		panels: [
+			["Problem", "Describe the vehicle or suspension design challenge, packaging limits, and loading conditions."],
+			["Approach", "Explain CAD iterations, FEA setup, material assumptions, and fabrication considerations."],
+			["Result", "Summarize the final parts, analysis confidence, or how the work supported the Baja car."]
+		],
+		visuals: [
+			{ placeholder: "Add suspension spacer, tab, or maintenance stand CAD", caption: "Use this for the strongest design visual." },
+			{ placeholder: "Add FEA stress plot or factor-of-safety screenshot", caption: "Show how the material or geometry was validated." },
+			{ placeholder: "Add manufactured part or car integration photo", caption: "Use this slot to show real hardware if available." }
+		],
+		timeline: [
+			["Context", "Add the Baja subsystem and design requirements."],
+			["Design", "Add part geometry, CAD process, and revision notes."],
+			["Analysis", "Add FEA setup, boundary conditions, and material choice."],
+			["Takeaway", "Add what you learned about vehicle design and manufacturable parts."]
+		]
+	},
+	"shpe": {
+		title: "Society of Hispanic Professional Engineers",
+		intro: "Use this detail view to expand SHPE leadership, projects, outreach, and ResearchSHPE work. Replace this with event outcomes, leadership scope, collaboration details, and photos.",
+		heroImage: "reference_files/SHPE Logo.jpg",
+		heroAlt: "Society of Hispanic Professional Engineers logo",
+		facts: [
+			["Category", "Student organization, leadership, outreach, project coordination."],
+			["Roles", "Projects Committee Payloads Team, ResearchSHPE Co-Director, Volunteer Director."],
+			["Impact to Fill In", "Add event attendance, volunteer hours, collaborations, or payload milestone here."]
+		],
+		panels: [
+			["Problem", "Describe the student need, outreach goal, or project collaboration SHPE supported."],
+			["Approach", "Explain how you coordinated events, organized volunteers, or contributed to payload design."],
+			["Result", "Summarize student impact, project progress, or community engagement outcomes."]
+		],
+		visuals: [
+			{ image: "reference_files/SHPE Logo.jpg", alt: "SHPE logo", caption: "Add chapter, role, or event context here." },
+			{ image: "reference_files/Beach Cleanup Volunteering.jpeg", alt: "SHPE beach cleanup volunteering event", caption: "Add volunteer role, event impact, or collaboration details." },
+			{ image: "reference_files/SHPE Beach Volunteer.jpeg", alt: "SHPE volunteer event", caption: "Use this slot for another outreach or leadership visual." }
+		],
+		timeline: [
+			["Context", "Add SHPE chapter goals and your leadership responsibilities."],
+			["Plan", "Add event planning, project coordination, or outreach workflow."],
+			["Execute", "Add photos, attendance, logistics, or collaborations."],
+			["Takeaway", "Add what this taught you about leadership and engineering community-building."]
+		]
+	},
+	"solid-propellant": {
+		title: "Solid Propellant Motor Project",
+		intro: "Use this detail view as the most complete project template: explain the motor objective, propellant formulation, measurement setup, C++ sensor work, and test stand iterations.",
+		heroImage: "reference_files/solid_propellant_scale.jpeg",
+		heroAlt: "Test stand scale for solid propellant thrust measurement",
+		facts: [
+			["Category", "Personal engineering project, propulsion, instrumentation."],
+			["Tools / Skills", "C++, strain gauges, HX711 load scale, SolidWorks, propellant casting, test stand design."],
+			["Impact to Fill In", "Add thrust data, test count, formulation comparison, or measurement accuracy result here."]
+		],
+		panels: [
+			["Problem", "Describe the need for reliable thrust measurement and repeatable solid propellant testing."],
+			["Approach", "Explain propellant compositions, sensor wiring, HX711 integration, C++ scripts, and stand iterations."],
+			["Result", "Summarize test outcomes, what changed between stand versions, and what data you plan to collect next."]
+		],
+		visuals: [
+			{ image: "reference_files/solid_propellant_scale.jpeg", alt: "Solid propellant thrust measurement test stand", caption: "Add what this scale measures and how it improved test quality." },
+			{ image: "reference_files/SolidworksScale.jpeg", alt: "SolidWorks model of the test stand scale", caption: "Add CAD design intent, fixture constraints, or sensor placement notes." },
+			{ video: "reference_files/old_solidprop_test.mp4", caption: "Early ignition test. Add safety context, setup notes, and what changed afterward." }
+		],
+		timeline: [
+			["Context", "Add why you started the motor project and what performance questions you wanted to answer."],
+			["Build", "Add propellant casting, test stand design, load-cell electronics, and C++ data collection."],
+			["Test", "Add static-fire setup, measurements, observations, and design changes."],
+			["Takeaway", "Add what this taught you about propulsion experimentation, instrumentation, and safety."]
+		]
+	},
+	"digital-ad-ai": {
+		title: "Digital Advertising AI",
+		intro: "Use this detail view to turn the AI advertising tool into a software case study. Replace this text with the user problem, model workflow, data inputs, and example insights.",
+		heroImage: "reference_files/HSI_app_foto.jpg",
+		heroAlt: "Application interface reference image",
+		facts: [
+			["Category", "Personal software project, AI-assisted analytics."],
+			["Tools / Skills", "Python, Tkinter, Google's Gemma AI model, market trend interpretation."],
+			["Impact to Fill In", "Add sample input, output insight, model behavior, or workflow result here."]
+		],
+		panels: [
+			["Problem", "Describe the advertising decision or market-analysis problem the tool helps solve."],
+			["Approach", "Explain the Tkinter interface, data inputs, prompt strategy, model response, and output format."],
+			["Result", "Summarize what the tool can generate, how it helps users, and what you plan to improve."]
+		],
+		visuals: [
+			{ placeholder: "Add Tkinter interface screenshot", caption: "Show the user workflow and key controls." },
+			{ placeholder: "Add sample ad performance input or trend chart", caption: "Use this for data that the AI interprets." },
+			{ placeholder: "Add AI recommendation output", caption: "Show what the tool produces after analysis." }
+		],
+		timeline: [
+			["Context", "Add why you built the tool and who it helps."],
+			["Build", "Add interface, model integration, and data-processing details."],
+			["Test", "Add sample data, outputs, and any validation process."],
+			["Takeaway", "Add what you learned about AI interfaces and decision-support tools."]
+		]
+	},
+	"electric-generator": {
+		title: "Electric Generator",
+		intro: "Use this detail view to expand the generator build into an electromechanical project story. Replace this text with the induction concept, 3D printed parts, bike integration goals, and test plan.",
+		heroImage: "reference_files/SolidworksScale.jpeg",
+		heroAlt: "CAD reference placeholder for mechanical design work",
+		facts: [
+			["Category", "Personal electromechanical project."],
+			["Tools / Skills", "Electromagnetic induction, 3D printing, mechanical integration, generator testing."],
+			["Impact to Fill In", "Add voltage output, prototype stage, print iteration, or bike integration result here."]
+		],
+		panels: [
+			["Problem", "Describe what electrical or mechanical requirement the generator needs to meet."],
+			["Approach", "Explain coil/magnet layout, printed parts, mounting strategy, and test method."],
+			["Result", "Summarize prototype progress, output measurements, issues found, and next iteration."]
+		],
+		visuals: [
+			{ placeholder: "Add generator CAD or 3D printed part photo", caption: "Show the mechanical design and printed components." },
+			{ placeholder: "Add wiring, coil, or magnet arrangement", caption: "Explain the induction setup visually." },
+			{ placeholder: "Add voltage test, bike mount, or bench setup", caption: "Use this for measured output or integration proof." }
+		],
+		timeline: [
+			["Context", "Add the bike-use case and power goal."],
+			["Design", "Add induction layout and printed-part decisions."],
+			["Prototype", "Add assembly, test setup, and measurements."],
+			["Takeaway", "Add what you learned about electromechanical prototyping."]
+		]
+	},
+	"robotic-arm": {
+		title: "Robotic Arm",
+		intro: "Use this detail view to expand the robotic arm into a controls and hardware project. Replace this with actuator choices, control method, Arduino/Raspberry Pi architecture, and photos.",
+		heroImage: "reference_files/HSI_app_foto.jpg",
+		heroAlt: "Project interface reference image",
+		facts: [
+			["Category", "Personal robotics project."],
+			["Tools / Skills", "Arduino Uno R3, Raspberry Pi planning, remote control, mechanical design, embedded systems."],
+			["Impact to Fill In", "Add degrees of freedom, control mode, prototype stage, or demo result here."]
+		],
+		panels: [
+			["Problem", "Describe what motion, control, or manipulation task the arm is designed for."],
+			["Approach", "Explain the controller, wiring, remote-control logic, joints, and planned Raspberry Pi upgrade."],
+			["Result", "Summarize current motion capability, control reliability, and next hardware/software step."]
+		],
+		visuals: [
+			{ placeholder: "Add robotic arm CAD or prototype photo", caption: "Show the physical mechanism." },
+			{ placeholder: "Add wiring diagram or Arduino setup", caption: "Show the control electronics." },
+			{ placeholder: "Add remote-control interface or motion demo", caption: "Show how a user operates it." }
+		],
+		timeline: [
+			["Context", "Add the project goal and desired arm capabilities."],
+			["Build", "Add mechanical design, electronics, and control logic."],
+			["Test", "Add motion tests, limits, and improvements."],
+			["Takeaway", "Add what you learned about robotics integration."]
+		]
+	},
+	"physics-calculator": {
+		title: "Physics Calculator",
+		intro: "Use this detail view to expand the calculator into a software learning tool. Replace this text with supported equations, calculus processes, interface design, and example outputs.",
+		heroImage: "reference_files/HSI_app_foto.jpg",
+		heroAlt: "Application interface reference image",
+		facts: [
+			["Category", "Personal educational software project."],
+			["Tools / Skills", "Physics equations, calculus processes, input validation, interface logic."],
+			["Impact to Fill In", "Add supported modules, example solution, or learning outcome here."]
+		],
+		panels: [
+			["Problem", "Describe the physics or calculus workflows the calculator makes easier to understand."],
+			["Approach", "Explain equation modules, user inputs, step display, and validation."],
+			["Result", "Summarize what the calculator solves and how it demonstrates concepts."]
+		],
+		visuals: [
+			{ placeholder: "Add calculator UI screenshot", caption: "Show the main interface and inputs." },
+			{ placeholder: "Add sample physics calculation", caption: "Use this for an example problem and output." },
+			{ placeholder: "Add calculus process or step-by-step display", caption: "Show how the tool teaches the process." }
+		],
+		timeline: [
+			["Context", "Add why you built the calculator and what topics it covers."],
+			["Build", "Add equation handling, UI, and validation details."],
+			["Test", "Add example problems and result checks."],
+			["Takeaway", "Add what you learned about educational tools and numerical logic."]
+		]
+	},
+	"data-visualization": {
+		title: "Data Visualization",
+		intro: "Use this detail view to expand the Excel-to-plot executable into a data workflow case study. Replace this text with file formats, plotting options, and example charts.",
+		heroImage: "reference_files/General Door Calcs Excel Sheet.jpeg",
+		heroAlt: "Spreadsheet reference image",
+		facts: [
+			["Category", "Personal Python data project."],
+			["Tools / Skills", "Python, Excel data, executable packaging, scatter plots, data cleaning."],
+			["Impact to Fill In", "Add dataset size, chart examples, packaging result, or workflow time saved here."]
+		],
+		panels: [
+			["Problem", "Describe the spreadsheet-to-visualization workflow this project simplifies."],
+			["Approach", "Explain Excel parsing, axis selection, plotting logic, and executable packaging."],
+			["Result", "Summarize the generated visuals and how users can interpret the data faster."]
+		],
+		visuals: [
+			{ placeholder: "Add sample Excel input", caption: "Show what the tool reads." },
+			{ placeholder: "Add generated scatter plot", caption: "Show the output chart." },
+			{ placeholder: "Add executable UI or command workflow", caption: "Show how a user runs it." }
+		],
+		timeline: [
+			["Context", "Add why the plotting workflow was useful."],
+			["Build", "Add parsing, plotting, and packaging details."],
+			["Validate", "Add test spreadsheets and output checks."],
+			["Takeaway", "Add what you learned about data tooling."]
+		]
+	},
+	"c-programs": {
+		title: "C Programs",
+		intro: "Use this detail view to expand the C programming projects into a fundamentals portfolio section. Replace this text with program goals, algorithms, and screenshots of console output.",
+		heroImage: "reference_files/HSI_app_foto.jpg",
+		heroAlt: "Software project reference image",
+		facts: [
+			["Category", "Personal programming fundamentals projects."],
+			["Tools / Skills", "C, procedural programming, console interaction, simulation, business logic."],
+			["Impact to Fill In", "Add program features, input/output examples, or concepts practiced here."]
+		],
+		panels: [
+			["Problem", "Describe what each C program was built to practice or simulate."],
+			["Approach", "Explain data structures, loops, conditionals, functions, and user interaction."],
+			["Result", "Summarize the finished programs and the programming concepts demonstrated."]
+		],
+		visuals: [
+			{ placeholder: "Add quadratic calculator console output", caption: "Show inputs, formula handling, and results." },
+			{ placeholder: "Add dominoes simulator screenshot", caption: "Show game state or simulation logic." },
+			{ placeholder: "Add business manager menu or data output", caption: "Show the program structure and user flow." }
+		],
+		timeline: [
+			["Context", "Add course or self-learning goal."],
+			["Build", "Add program architecture and functions."],
+			["Test", "Add example inputs and edge cases."],
+			["Takeaway", "Add what you learned about C and structured programming."]
+		]
+	},
+	"discord-ai-bot": {
+		title: "Discord AI Bot",
+		intro: "Use this detail view to expand the Discord AI bot into a software systems project. Replace this with bot commands, moderation features, AI workflow, and example engineering-help interactions.",
+		heroImage: "reference_files/CBM_LOGO.png",
+		heroAlt: "AI bot reference image",
+		facts: [
+			["Category", "Personal AI bot project."],
+			["Tools / Skills", "Discord bot development, AI assistance, server monitoring, code-assisted problem solving."],
+			["Impact to Fill In", "Add command count, server use case, response example, or engineering problem solved here."]
+		],
+		panels: [
+			["Problem", "Describe the student or server-management tasks the bot was meant to reduce."],
+			["Approach", "Explain bot commands, AI response flow, monitoring behavior, and code execution or reasoning safeguards."],
+			["Result", "Summarize what the bot can do, how it helps users, and what features are planned next."]
+		],
+		visuals: [
+			{ placeholder: "Add Discord command screenshot", caption: "Show a real interaction or command menu." },
+			{ placeholder: "Add engineering problem response example", caption: "Show how the bot reasons through a technical task." },
+			{ placeholder: "Add bot architecture or event flow", caption: "Explain how messages, prompts, and responses move through the system." }
+		],
+		timeline: [
+			["Context", "Add why the bot was useful for students or server management."],
+			["Build", "Add Discord integration, AI flow, and command design."],
+			["Validate", "Add test prompts, moderation checks, or response quality checks."],
+			["Takeaway", "Add what you learned about AI bots and practical automation."]
+		]
+	}
+};
+
 function escapeHtml(value) {
-	return value.replace(/[&<>"]/g, (character) => ({
+	return String(value).replace(/[&<>"]/g, (character) => ({
 		"&": "&amp;",
 		"<": "&lt;",
 		">": "&gt;",
@@ -249,9 +549,19 @@ function renderPanels(panels) {
 
 function renderVisuals(visuals) {
 	return visuals.map((visual) => {
-		const media = visual.image
-			? `<img src="${escapeHtml(visual.image)}" alt="${escapeHtml(visual.alt)}">`
-			: `<div class="visual-placeholder">${escapeHtml(visual.placeholder)}</div>`;
+		let media = `<div class="visual-placeholder">${escapeHtml(visual.placeholder)}</div>`;
+
+		if (visual.image) {
+			media = `<img src="${escapeHtml(visual.image)}" alt="${escapeHtml(visual.alt)}">`;
+		}
+
+		if (visual.video) {
+			media = `
+				<video autoplay loop muted playsinline>
+					<source src="${escapeHtml(visual.video)}" type="video/mp4">
+				</video>
+			`;
+		}
 
 		return `
 			<figure class="visual-slot">
@@ -406,11 +716,84 @@ function showResearchList() {
 	}
 }
 
+function showProjectDetail(key) {
+	const detail = projectDetails[key];
+	const projectsSection = document.querySelector("#projects");
+	const detailView = document.querySelector("#projects-detail-view");
+
+	if (!detail || !projectsSection || !detailView) {
+		return;
+	}
+
+	detailView.innerHTML = `
+		<button class="back-link" type="button" data-back-to-projects>Go Back to Main Page</button>
+
+		<div class="experience-detail-hero">
+			<div>
+				<span class="eyebrow">Project Detail</span>
+				<h2>${escapeHtml(detail.title)}</h2>
+				<p class="detail-lede">${escapeHtml(detail.intro)}</p>
+			</div>
+			<div class="detail-hero-media">
+				${detail.heroImage.endsWith(".mp4")
+					? `<video autoplay loop muted playsinline><source src="${escapeHtml(detail.heroImage)}" type="video/mp4"></video>`
+					: `<img src="${escapeHtml(detail.heroImage)}" alt="${escapeHtml(detail.heroAlt)}">`}
+			</div>
+		</div>
+
+		<div class="detail-summary-grid">
+			${renderFacts(detail.facts)}
+		</div>
+
+		<div class="detail-section-grid">
+			${renderPanels(detail.panels)}
+		</div>
+
+		<h3>Visuals to Add</h3>
+		<div class="visual-board">
+			${renderVisuals(detail.visuals)}
+		</div>
+
+		<h3>Work Breakdown</h3>
+		<ul class="detail-timeline">
+			${renderTimeline(detail.timeline)}
+		</ul>
+
+		<div class="detail-footer-action">
+			<button class="back-link" type="button" data-back-to-projects>Go Back to Main Page</button>
+		</div>
+	`;
+
+	projectsSection.classList.add("experience-list-hidden");
+	detailView.hidden = false;
+	window.location.hash = key;
+	projectsSection.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function showProjectList() {
+	const projectsSection = document.querySelector("#projects");
+	const detailView = document.querySelector("#projects-detail-view");
+
+	if (!projectsSection || !detailView) {
+		return;
+	}
+
+	projectsSection.classList.remove("experience-list-hidden");
+	detailView.hidden = true;
+	detailView.innerHTML = "";
+
+	if (window.location.hash) {
+		history.pushState("", document.title, window.location.pathname + window.location.search);
+	}
+}
+
 document.addEventListener("click", (event) => {
 	const detailButton = event.target.closest("[data-experience]");
 	const researchButton = event.target.closest("[data-research]");
+	const projectButton = event.target.closest("[data-project]");
 	const backButton = event.target.closest("[data-back-to-experience]");
 	const researchBackButton = event.target.closest("[data-back-to-research]");
+	const projectBackButton = event.target.closest("[data-back-to-projects]");
 
 	if (detailButton) {
 		showExperienceDetail(detailButton.dataset.experience);
@@ -420,12 +803,20 @@ document.addEventListener("click", (event) => {
 		showResearchDetail(researchButton.dataset.research);
 	}
 
+	if (projectButton) {
+		showProjectDetail(projectButton.dataset.project);
+	}
+
 	if (backButton) {
 		showExperienceList();
 	}
 
 	if (researchBackButton) {
 		showResearchList();
+	}
+
+	if (projectBackButton) {
+		showProjectList();
 	}
 });
 
@@ -436,6 +827,7 @@ document.addEventListener("keydown", (event) => {
 
 	const detailCard = event.target.closest(".experience-item[data-experience]");
 	const researchCard = event.target.closest(".experience-item[data-research]");
+	const projectCard = event.target.closest(".experience-item[data-project]");
 
 	if (detailCard) {
 		event.preventDefault();
@@ -445,6 +837,11 @@ document.addEventListener("keydown", (event) => {
 	if (researchCard) {
 		event.preventDefault();
 		showResearchDetail(researchCard.dataset.research);
+	}
+
+	if (projectCard) {
+		event.preventDefault();
+		showProjectDetail(projectCard.dataset.project);
 	}
 });
 
@@ -457,5 +854,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
 	if (key && researchDetails[key]) {
 		showResearchDetail(key);
+	}
+
+	if (key && projectDetails[key]) {
+		showProjectDetail(key);
 	}
 });

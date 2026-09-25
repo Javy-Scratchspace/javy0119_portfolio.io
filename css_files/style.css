@@ -344,7 +344,8 @@ li {
 }
 
 .experience-item[data-experience],
-.experience-item[data-research] {
+.experience-item[data-research],
+.experience-item[data-project] {
     cursor: pointer;
 }
 

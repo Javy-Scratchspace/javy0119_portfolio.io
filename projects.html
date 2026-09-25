@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projects and organizations Javier A. Cuevas Chabrier has contributed to, from experimental rocketry to Baja SAE and personal builds.">
     <title>Projects &amp; Clubs | Javier A. Cuevas Chabrier</title>
-        <link rel="icon" type="image/svg+xml" href="png_files/puerto-rico-flag.svg">
+    <link rel="icon" type="image/svg+xml" href="png_files/puerto-rico-flag.svg">
     <link rel="stylesheet" href="css_files/style.css"/>
+    <script src="js_files/script.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -30,7 +31,7 @@
             <span class="eyebrow">Sec. 04 — Projects &amp; Organizations</span>
             <h2>Projects &amp; Organizations</h2>
 
-            <div class="experience-item">
+            <div class="experience-item" data-project="kxr" tabindex="0" aria-label="View more about Knights Experimental Rocketry">
                 <h3>Knights Experimental Rocketry - Propulsion Director</h3>
                 <ul>
                     <li>Applied rocketry principles: heat transfer, bolt stress, thrust, and impulse.</li>
@@ -39,18 +40,24 @@
                     <li>Created preliminary payload frame design inspired by NASA's 3U CubeSat using McMaster resources.</li>
                     <li>Working towards L1 certification.</li>
                 </ul>
+                <div class="experience-actions">
+                    <button class="detail-link" type="button">View More</button>
+                </div>
             </div>
 
-            <div class="experience-item">
+            <div class="experience-item" data-project="baja-sae" tabindex="0" aria-label="View more about Knights Racing BAJA SAE">
                 <h3>Knights Racing BAJA SAE</h3>
                 <ul>
                     <li>Contributed to overall Baja SAE car design (2024-2025).</li>
                     <li>Designed suspension spacers, tabs, maintenance stand, and suspension tabs.</li>
                     <li>Conducted FEA analysis to determine material suitability and strength.</li>
                 </ul>
+                <div class="experience-actions">
+                    <button class="detail-link" type="button">View More</button>
+                </div>
             </div>
 
-            <div class="experience-item">
+            <div class="experience-item" data-project="shpe" tabindex="0" aria-label="View more about Society of Hispanic Professional Engineers">
                 <h3>Society of Hispanic Professional Engineers</h3>
                 <ul>
                     <li><strong>Projects Committee - Payloads Team:</strong> Designed preliminary payload frame for SHPE x KXR collaboration.</li>
@@ -61,9 +68,12 @@
                     <img src="reference_files/SHPE Logo.jpg" alt="Society of Hispanic Professional Engineers logo">
                     <img src="reference_files/Beach Cleanup Volunteering.jpeg" alt="SHPE beach cleanup volunteering event">
                 </div>
+                <div class="experience-actions">
+                    <button class="detail-link" type="button">View More</button>
+                </div>
             </div>
 
-            <div class="experience-item">
+            <div class="experience-item" data-project="solid-propellant" tabindex="0" aria-label="View more about Solid Propellant Motor Project">
                 <h3>Solid Propellant Motor Project</h3>
                 <ul>
                     <li>Working towards the research and development of solid propellant motors.</li>
@@ -81,20 +91,89 @@
                     </video>
                 </div>
                 <p class="item-caption">In the above video, I ignited the propellant. This was an early test — new tests are underway with the updated scale shown above.</p>
+                <div class="experience-actions">
+                    <button class="detail-link" type="button">View More</button>
+                </div>
             </div>
 
-            <div class="experience-item">
-                <h3>Personal Projects</h3>
+            <div class="experience-item" data-project="digital-ad-ai" tabindex="0" aria-label="View more about Digital Advertising AI">
+                <h3>Digital Advertising AI</h3>
                 <ul>
-                    <li><strong>Digital Advertising AI:</strong> Software that interprets market trends and ad performance using Python Tkinter and Google's Gemma AI model.</li>
-                    <li><strong>Electric Generator:</strong> Building generator using electromagnetic induction, 3D printed parts, for implementation on electric bicycle.</li>
-                    <li><strong>Robotic Arm:</strong> Designing remote-controlled robotic arm with Arduino Uno R3 microcontroller. Working towards implementing raspberry pi microcontroller.</li>
-                    <li><strong>Physics Calculator:</strong> Multi-purpose calculator demonstrating physics concepts and calculus processes.</li>
-                    <li><strong>Data Visualization:</strong> Python executable generating scatter plots from Excel data.</li>
-                    <li><strong>C Programs:</strong> Quadratic function calculator, dominoes game simulator, business manager.</li>
-                    <li><strong>Discord AI Bot:</strong> Developed an AI chat bot within discord that helps monitor servers, assist students in time consuming tasks, and is capable of solving complex engineering problems through code.</li>
+                    <li>Built software that interprets market trends and ad performance using Python Tkinter and Google's Gemma AI model.</li>
+                    <li>Designed the project as a practical tool for turning campaign data into clearer advertising decisions.</li>
                 </ul>
+                <div class="experience-actions">
+                    <button class="detail-link" type="button">View More</button>
+                </div>
             </div>
+
+            <div class="experience-item" data-project="electric-generator" tabindex="0" aria-label="View more about Electric Generator">
+                <h3>Electric Generator</h3>
+                <ul>
+                    <li>Building a generator using electromagnetic induction and 3D printed parts.</li>
+                    <li>Working toward implementation on an electric bicycle.</li>
+                </ul>
+                <div class="experience-actions">
+                    <button class="detail-link" type="button">View More</button>
+                </div>
+            </div>
+
+            <div class="experience-item" data-project="robotic-arm" tabindex="0" aria-label="View more about Robotic Arm">
+                <h3>Robotic Arm</h3>
+                <ul>
+                    <li>Designing a remote-controlled robotic arm with an Arduino Uno R3 microcontroller.</li>
+                    <li>Working toward implementing a Raspberry Pi controller for expanded capability.</li>
+                </ul>
+                <div class="experience-actions">
+                    <button class="detail-link" type="button">View More</button>
+                </div>
+            </div>
+
+            <div class="experience-item" data-project="physics-calculator" tabindex="0" aria-label="View more about Physics Calculator">
+                <h3>Physics Calculator</h3>
+                <ul>
+                    <li>Created a multi-purpose calculator demonstrating physics concepts and calculus processes.</li>
+                    <li>Structured the project around making equations, inputs, and outputs easier to understand.</li>
+                </ul>
+                <div class="experience-actions">
+                    <button class="detail-link" type="button">View More</button>
+                </div>
+            </div>
+
+            <div class="experience-item" data-project="data-visualization" tabindex="0" aria-label="View more about Data Visualization">
+                <h3>Data Visualization</h3>
+                <ul>
+                    <li>Built a Python executable that generates scatter plots from Excel data.</li>
+                    <li>Focused on turning spreadsheet data into quick visual summaries.</li>
+                </ul>
+                <div class="experience-actions">
+                    <button class="detail-link" type="button">View More</button>
+                </div>
+            </div>
+
+            <div class="experience-item" data-project="c-programs" tabindex="0" aria-label="View more about C Programs">
+                <h3>C Programs</h3>
+                <ul>
+                    <li>Created a quadratic function calculator, dominoes game simulator, and business manager.</li>
+                    <li>Used the projects to practice procedural programming, data handling, and console-based interaction.</li>
+                </ul>
+                <div class="experience-actions">
+                    <button class="detail-link" type="button">View More</button>
+                </div>
+            </div>
+
+            <div class="experience-item" data-project="discord-ai-bot" tabindex="0" aria-label="View more about Discord AI Bot">
+                <h3>Discord AI Bot</h3>
+                <ul>
+                    <li>Developed an AI chat bot within Discord that helps monitor servers and assist students with time-consuming tasks.</li>
+                    <li>Designed the bot to solve complex engineering problems through code-assisted responses.</li>
+                </ul>
+                <div class="experience-actions">
+                    <button class="detail-link" type="button">View More</button>
+                </div>
+            </div>
+
+            <div id="projects-detail-view" class="experience-detail-view" hidden></div>
         </section>
 
         <footer>
