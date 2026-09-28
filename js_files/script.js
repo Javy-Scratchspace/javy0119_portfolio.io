@@ -73,12 +73,34 @@ const experienceDetails = {
 	}
 };
 
-const enableExperienceProfiles = false;
+const enableDetailProfiles = false;
 
-const experienceProfileVisibility = {
-	"well-bilt": true,
-	"code-meets-bagel": true,
-	"lockheed-martin": true
+const detailProfileVisibility = {
+	experience: {
+		"well-bilt": true,
+		"code-meets-bagel": true,
+		"lockheed-martin": true
+	},
+	research: {
+		"fsu-young-scholars": true,
+		"opa": true,
+		"asrl": true,
+		"nanoelectronics": true,
+		"perl": true
+	},
+	project: {
+		"kxr": true,
+		"baja-sae": true,
+		"shpe": true,
+		"solid-propellant": true,
+		"digital-ad-ai": true,
+		"electric-generator": true,
+		"robotic-arm": true,
+		"physics-calculator": true,
+		"data-visualization": true,
+		"c-programs": true,
+		"discord-ai-bot": true
+	}
 };
 
 const researchDetails = {
@@ -737,7 +759,7 @@ const detailOptions = {
 };
 
 function showExperienceDetail(key) {
-	if (!isExperienceProfileEnabled(key)) {
+	if (!isDetailProfileEnabled("experience", key)) {
 		return;
 	}
 
@@ -745,10 +767,18 @@ function showExperienceDetail(key) {
 }
 
 function showResearchDetail(key) {
+	if (!isDetailProfileEnabled("research", key)) {
+		return;
+	}
+
 	showDetail(key, researchDetails, detailOptions.research);
 }
 
 function showProjectDetail(key) {
+	if (!isDetailProfileEnabled("project", key)) {
+		return;
+	}
+
 	showDetail(key, projectDetails, detailOptions.project);
 }
 
@@ -764,25 +794,29 @@ function showProjectList() {
 	showList("#projects", "#projects-detail-view");
 }
 
-function isExperienceProfileEnabled(key) {
-	return enableExperienceProfiles && experienceProfileVisibility[key] !== false;
+function isDetailProfileEnabled(type, key) {
+	return enableDetailProfiles && detailProfileVisibility[type]?.[key] !== false;
 }
 
-function applyExperienceProfileVisibility() {
-	document.querySelectorAll(".experience-item[data-experience]").forEach((card) => {
-		const enabled = isExperienceProfileEnabled(card.dataset.experience);
-		const actions = card.querySelector(".experience-actions");
+function applyDetailProfileVisibility() {
+	const profileTypes = ["experience", "research", "project"];
 
-		card.dataset.profileEnabled = enabled ? "true" : "false";
+	profileTypes.forEach((type) => {
+		document.querySelectorAll(`.experience-item[data-${type}]`).forEach((card) => {
+			const enabled = isDetailProfileEnabled(type, card.dataset[type]);
+			const actions = card.querySelector(".experience-actions");
 
-		if (actions) {
-			actions.hidden = !enabled;
-		}
+			card.dataset.profileEnabled = enabled ? "true" : "false";
 
-		if (!enabled) {
-			card.removeAttribute("tabindex");
-			card.removeAttribute("aria-label");
-		}
+			if (actions) {
+				actions.hidden = !enabled;
+			}
+
+			if (!enabled) {
+				card.removeAttribute("tabindex");
+				card.removeAttribute("aria-label");
+			}
+		});
 	});
 }
 
@@ -794,15 +828,15 @@ document.addEventListener("click", (event) => {
 	const researchBackButton = event.target.closest("[data-back-to-research]");
 	const projectBackButton = event.target.closest("[data-back-to-projects]");
 
-	if (detailButton && isExperienceProfileEnabled(detailButton.dataset.experience)) {
+	if (detailButton && isDetailProfileEnabled("experience", detailButton.dataset.experience)) {
 		showExperienceDetail(detailButton.dataset.experience);
 	}
 
-	if (researchButton) {
+	if (researchButton && isDetailProfileEnabled("research", researchButton.dataset.research)) {
 		showResearchDetail(researchButton.dataset.research);
 	}
 
-	if (projectButton) {
+	if (projectButton && isDetailProfileEnabled("project", projectButton.dataset.project)) {
 		showProjectDetail(projectButton.dataset.project);
 	}
 
@@ -828,36 +862,36 @@ document.addEventListener("keydown", (event) => {
 	const researchCard = event.target.closest(".experience-item[data-research]");
 	const projectCard = event.target.closest(".experience-item[data-project]");
 
-	if (detailCard && isExperienceProfileEnabled(detailCard.dataset.experience)) {
+	if (detailCard && isDetailProfileEnabled("experience", detailCard.dataset.experience)) {
 		event.preventDefault();
 		showExperienceDetail(detailCard.dataset.experience);
 	}
 
-	if (researchCard) {
+	if (researchCard && isDetailProfileEnabled("research", researchCard.dataset.research)) {
 		event.preventDefault();
 		showResearchDetail(researchCard.dataset.research);
 	}
 
-	if (projectCard) {
+	if (projectCard && isDetailProfileEnabled("project", projectCard.dataset.project)) {
 		event.preventDefault();
 		showProjectDetail(projectCard.dataset.project);
 	}
 });
 
 window.addEventListener("DOMContentLoaded", () => {
-	applyExperienceProfileVisibility();
+	applyDetailProfileVisibility();
 
 	const key = window.location.hash.replace("#", "");
 
-	if (key && experienceDetails[key] && isExperienceProfileEnabled(key)) {
+	if (key && experienceDetails[key] && isDetailProfileEnabled("experience", key)) {
 		showExperienceDetail(key);
 	}
 
-	if (key && researchDetails[key]) {
+	if (key && researchDetails[key] && isDetailProfileEnabled("research", key)) {
 		showResearchDetail(key);
 	}
 
-	if (key && projectDetails[key]) {
+	if (key && projectDetails[key] && isDetailProfileEnabled("project", key)) {
 		showProjectDetail(key);
 	}
 });
