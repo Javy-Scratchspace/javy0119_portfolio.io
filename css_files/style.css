@@ -349,6 +349,10 @@ li {
     cursor: pointer;
 }
 
+.experience-item[data-experience][data-profile-enabled="false"] {
+    cursor: default;
+}
+
 .experience-item h3 {
     margin-top: 0;
 }

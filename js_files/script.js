@@ -73,6 +73,14 @@ const experienceDetails = {
 	}
 };
 
+const enableExperienceProfiles = false;
+
+const experienceProfileVisibility = {
+	"well-bilt": true,
+	"code-meets-bagel": true,
+	"lockheed-martin": true
+};
+
 const researchDetails = {
 	"fsu-young-scholars": {
 		title: "FSU Young Scholars Program",
@@ -729,6 +737,10 @@ const detailOptions = {
 };
 
 function showExperienceDetail(key) {
+	if (!isExperienceProfileEnabled(key)) {
+		return;
+	}
+
 	showDetail(key, experienceDetails, detailOptions.experience);
 }
 
@@ -752,6 +764,28 @@ function showProjectList() {
 	showList("#projects", "#projects-detail-view");
 }
 
+function isExperienceProfileEnabled(key) {
+	return enableExperienceProfiles && experienceProfileVisibility[key] !== false;
+}
+
+function applyExperienceProfileVisibility() {
+	document.querySelectorAll(".experience-item[data-experience]").forEach((card) => {
+		const enabled = isExperienceProfileEnabled(card.dataset.experience);
+		const actions = card.querySelector(".experience-actions");
+
+		card.dataset.profileEnabled = enabled ? "true" : "false";
+
+		if (actions) {
+			actions.hidden = !enabled;
+		}
+
+		if (!enabled) {
+			card.removeAttribute("tabindex");
+			card.removeAttribute("aria-label");
+		}
+	});
+}
+
 document.addEventListener("click", (event) => {
 	const detailButton = event.target.closest("[data-experience]");
 	const researchButton = event.target.closest("[data-research]");
@@ -760,7 +794,7 @@ document.addEventListener("click", (event) => {
 	const researchBackButton = event.target.closest("[data-back-to-research]");
 	const projectBackButton = event.target.closest("[data-back-to-projects]");
 
-	if (detailButton) {
+	if (detailButton && isExperienceProfileEnabled(detailButton.dataset.experience)) {
 		showExperienceDetail(detailButton.dataset.experience);
 	}
 
@@ -794,7 +828,7 @@ document.addEventListener("keydown", (event) => {
 	const researchCard = event.target.closest(".experience-item[data-research]");
 	const projectCard = event.target.closest(".experience-item[data-project]");
 
-	if (detailCard) {
+	if (detailCard && isExperienceProfileEnabled(detailCard.dataset.experience)) {
 		event.preventDefault();
 		showExperienceDetail(detailCard.dataset.experience);
 	}
@@ -811,9 +845,11 @@ document.addEventListener("keydown", (event) => {
 });
 
 window.addEventListener("DOMContentLoaded", () => {
+	applyExperienceProfileVisibility();
+
 	const key = window.location.hash.replace("#", "");
 
-	if (key && experienceDetails[key]) {
+	if (key && experienceDetails[key] && isExperienceProfileEnabled(key)) {
 		showExperienceDetail(key);
 	}
 
