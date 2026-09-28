@@ -805,6 +805,7 @@ function applyDetailProfileVisibility() {
 		document.querySelectorAll(`.experience-item[data-${type}]`).forEach((card) => {
 			const enabled = isDetailProfileEnabled(type, card.dataset[type]);
 			const actions = card.querySelector(".experience-actions");
+			const title = card.querySelector("h3")?.textContent.trim();
 
 			card.dataset.profileEnabled = enabled ? "true" : "false";
 
@@ -815,6 +816,12 @@ function applyDetailProfileVisibility() {
 			if (!enabled) {
 				card.removeAttribute("tabindex");
 				card.removeAttribute("aria-label");
+			} else {
+				card.setAttribute("tabindex", "0");
+
+				if (title) {
+					card.setAttribute("aria-label", `View more about ${title}`);
+				}
 			}
 		});
 	});
