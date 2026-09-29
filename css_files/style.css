@@ -44,6 +44,33 @@ body {
         var(--paper);
 }
 
+    body.landing-page {
+        height: 100vh;
+        min-height: 100vh;
+        color: #ffffff;
+        background:
+            radial-gradient(circle at 50% 26%, rgba(227, 160, 8, 0.24), transparent 30%),
+            linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px) 0 0 / 36px 36px,
+            linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px) 0 0 / 36px 36px,
+        var(--navy-deep);
+        overflow: hidden;
+        position: relative;
+        isolation: isolate;
+    }
+
+    .landing-watermark {
+        position: fixed;
+        left: 50%;
+        top: 62%;
+        width: min(84vw, 740px);
+        height: auto;
+        transform: translate(-50%, -50%);
+        image-rendering: pixelated;
+        opacity: 0.16;
+        pointer-events: none;
+        z-index: 0;
+    }
+
 a {
     color: inherit;
 }
@@ -64,6 +91,117 @@ button:focus-visible {
     max-width: 1100px;
     margin: 0 auto;
     padding: 24px 20px 60px;
+}
+
+.landing-shell {
+    height: 100vh;
+    min-height: 100vh;
+    width: min(920px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.landing-logo-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: min(320px, 72vw, 38vh);
+    height: min(320px, 72vw, 38vh);
+    flex: 0 0 auto;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 6px solid var(--thrust);
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28), inset 0 0 0 10px rgba(15, 36, 56, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.landing-logo-link:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 30px 72px rgba(0, 0, 0, 0.34), inset 0 0 0 10px rgba(15, 36, 56, 0.08);
+}
+
+.landing-portrait {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center 50%;
+}
+
+.landing-shell h1 {
+    font-size: clamp(2.2rem, 6vw, 4.2rem);
+    color: #ffffff;
+    margin: 12px 0 0;
+    letter-spacing: 0;
+}
+
+@media (max-height: 760px) {
+    .landing-shell {
+        padding: 24px 0;
+        gap: 12px;
+    }
+
+    .landing-logo-link {
+        width: min(260px, 64vw, 32vh);
+        height: min(260px, 64vw, 32vh);
+    }
+
+    .landing-shell h1 {
+        font-size: clamp(2rem, 5vw, 3.7rem);
+        margin-top: 6px;
+    }
+}
+
+.landing-subtitle {
+    font-family: var(--font-mono);
+    color: #C9D6DF;
+    font-size: clamp(0.95rem, 2.4vw, 1.2rem);
+}
+
+.landing-socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.landing-socials a,
+.landing-enter {
+    font-family: var(--font-mono);
+    font-size: 0.88rem;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid rgba(227, 160, 8, 0.55);
+    background: rgba(23, 56, 90, 0.72);
+    padding: 10px 14px;
+    border-radius: 4px;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.landing-socials a:hover,
+.landing-enter:hover {
+    background: var(--thrust);
+    color: var(--navy-deep);
+    transform: translateY(-2px);
+}
+
+.landing-enter {
+    margin-top: 10px;
+    background: var(--thrust);
+    color: var(--navy-deep);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -335,6 +473,8 @@ li {
     margin-bottom: 20px;
     border-radius: 4px;
     border-left: 4px solid var(--navy-deep);
+    display: flex;
+    flex-direction: column;
     transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
@@ -355,18 +495,17 @@ li {
 
 .experience-item h3 {
     margin-top: 0;
+    order: 1;
 }
 
-.experience-item ul {
-    margin-left: 4px;
-    margin-top: 8px;
-}
-
-.experience-item li {
-    margin-bottom: 8px;
+.experience-summary {
+    order: 3;
+    margin-top: 16px;
+    color: var(--ink-soft);
 }
 
 .experience-actions {
+    order: 5;
     margin-top: 18px;
 }
 
@@ -401,6 +540,7 @@ li {
 }
 
 .item-caption {
+    order: 4;
     font-size: 0.92em;
     color: var(--ink-soft);
     font-style: italic;
@@ -409,6 +549,7 @@ li {
 
 /* Media gallery — replaces the old full-bleed circular image bug */
 .media-gallery {
+    order: 2;
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
