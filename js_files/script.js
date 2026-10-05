@@ -1,79 +1,4 @@
-const experienceDetails = {
-	"well-bilt": {
-		title: "Engineering Intern - Well Bilt Industries",
-		logo: "reference_files/WellBiltLogo.png",
-        intro: "This internship focused on building hangar doors and developing tools to help engineers. During this internship, I worked with SolidWorks to generate drawings, Risa to conduct analyses that determine if the door panels can withstand wind loads, python to build automation tools, Beamline to generate commands for machines to drill out hangar door beams, and Messer Nesting to develop laser cut metal parts. I worked with customers and Engineers to ensure that the product is delivered in a satisfactory way, ensuring that not only the technical requirements were met, but also the desired layout of the project is handled properly.",
-        facts: [
-			["Role", "Engineering Intern"],
-			["Focus Areas", "Python automation, RISA modeling, SolidWorks drawings, manufacturing support."],
-			["Main Impact Points", "Developed Python automation tools that reduced time to produce cut lists for client projects by 47%.", "Worked on client project models using SolidWorks and developed manufacturing-ready drawings.", "Worked with Engineers and clients to ensure satisfaction across all fields.", "Assisted in the manufacturing of laser cut parts and beams by producing files that assist machines in producing these parts, reducing time to produce client requests by 12%."]
-		],
-		panels: [
-			["Problem", "Clients building their hangars need doors capable of withstanding the thermal stresses and wind speeds quoted for their location."],
-			["Approach", "SolidWorks: Build hangar door models to develop manufacturing-ready drawings.", "Beamline: Produce files that give orders to machine on where to drill holes to attach clips.", "Messer Nesting: Make laster cut metal parts that are used for clips for connecting hangar doors and other parts that are helpful for helping employees keep track of material."],
-			["Result", "Clients get satisfied results that are long-term affordable solutions in reduced time."]
-		],
-		visuals: [
-			{ image: "reference_files/Python Cut List.jpeg", alt: "Python cut list automation example", caption: "Automated cut list program that displays the results after performing a merge and split of beam orders to maintain beam length orders (normally 20') and ensure all materials are ordered." },
-			{ image: "reference_files/General Door Calcs Excel Sheet.jpeg", alt: "Excel door calculation sheet example", caption: "Developed an Excel database that takes in door dimensions and panel count and spits out the Risa file best used to copy from. Also conducts calculations given wind speed and determines if the panel with the dimensions can handle the stresses." },
-			{ image: "reference_files/Risa Strctural Analysis.jpeg", alt: "Risa Structural Analysis grid points example", caption: "Example of hangar door via Risa Structural Analysis program. These grid points define beam connections where beams are connected via clips. The software produces a visual that shows the doors weakest and strongest points." },
-            { image: "reference_files/WellBiltFinalResult.png", alt: "Final Door Design Example", caption: "Example of a biparting hangar door being finally built."}
-		],
-		timeline: [
-			["Build", "Use Risa to ensure hangar door beams handle the wind loads with a sufficient safety factor fo 10, SolidWorks to develop the drawings and ensure fast manufacturing processes, and Excel to develop cut lists necessary for building hangar doors."],
-			["Validation", "Validated Risa calculations by determining wind loads at the center point of each door frame and hand calculating the deflections."],
-			["Takeaway", "I learned how to take a design from concept to reality. I was able to assist and epedite the design and manufacturing processes for building client solutions while also building automation tools that assist engineers in purchasing materials by reducing time to generate cut lists by 47%."]
-		]
-	},
-	"code-meets-bagel": {
-		title: "Software Developer - Code Meets Bagel",
-        logo: "reference_files/cmb.jpg",
-        intro: "As an intern for Code Meets Bagel, I focused on developing proper documentation for an AI Slack Bot. I also helped in the development and testing of the AI. The purpose of this bot was to help a marketing team build marketing solution by integrating AI with other marketing software platforms.",
-		facts: [
-			["Role", "Software Developer"],
-			["Focus Areas", "Python, Slack bot development, Claude/OpenAI APIs, GitHub workflows, deployment."],
-			["Main Impact Points", "Managed testing infrastructure across several different Slack bots.", "Handled heirarchy of Slack bot communication.", "Implemented a method to decrease token usage by 11%."]
-		],
-		panels: [
-			["Problem", "A marketing team needed a bot that was capable of producing ads based on team requests."],
-			["Approach", "Slack: The framework where the bots were developed. Here, team members could interact with different bots and make requests for ad generation. The bot would develop a response and our program would parse it to determine what task was needed to be completed and how.", "OpenAI/Claude API: Used to handle bot queries to large language AI models (LLM).", "Python: The language that the Slack bots were built on. Using Python, I was able to develop test files that would test for different scenarios that the marketing team would come up with. Several runs were conducted to see what prompt would be most beneficial for explaining the role to the AI."],
-			["Result", "A Slack bot integrated with AI thats capable of handling consumer queries and breaking down what needs are to be met, how they need to be met, and what commands must be called."]
-		],
-		visuals: [
-        ],
-		timeline: [
-			["Build", "Create a simple bot within Slack capable of handling user mentions. Then, integrate the bot with AI so that the bot can handle regular conversations with a human."],
-			["Validation", "To validate, simply set up tests that are common scenarios for the team and run it with either different role descriptions or prompting that is said different but conveys the same message to understand how the bot will react and what the best response is."],
-			["Takeaway", "This experience was my introduction to API calls. Thanks to this experience, I not only understand how API calls work, but can also use this informaiton to build software that requires outsourcing of data or making calls to an AI. I was able to successfully build my own AI Discord chat bot that helps me with homework and general queries."]
-		]
-	},
-	"lockheed-martin": {
-		title: "Systems Engineer - Lockheed Martin",
-		logo: "reference_files/lm_logo.jpg",
-		intro: "As a Systems Engineer with Lockheed Martin working under the ARISE Modeling Based Systems Engineering (MBSE) team, I focused on using Cameo to model stakeholder projects and Python to build automation projects within Cameo. I used Regex and AI based parsing to build a plugin that can parse code files for different project requirements. I implemented several methodologies and data structures to help automate the search and retrieval process of Cameo packages and GitLab files. Overall, I helped increase the productivity of the team members and of the stakeholders.",
-		facts: [
-			["Role", "Systems Engineer"],
-			["Focus Areas", "Cameo Systems Modeler, plugin development, Python backend logic, C++ simulation review."],
-			["Main Impact Points", "Enhanced in-house Cameo plugins to automate Engineering Processes using Python, reducing model generation and simulation timeframes from days to hours.", "Assisted in the generation of models using Cameo Systems Modeler that demonstrate project simulations.", "Implemented several CS concepts that reduced human error by allowing the program to conduct searches for packages and GitLab files, reducing model error by 37%.", "Testing different regular expression (regex) methods that capture desired parameters more accurately, increasing coverage of parameters by 25%.", "Implemented AI-based parsing to improve regex parsing, allowing for the plugin to adhere to different coding standard, improving parsing flexibility, and increasing accuraccy of capturing parameters."]
-		],
-		panels: [
-			["Problem", "Other programs within Lockheed Martin need a way to model their projects such that others can read it well and it accurately describes what the project is focused on."],
-			["Approach", "Cameo Systems Modeler: Demonstrates how each part functions within a system and provides a friendly interface to model project integration.", "Jython: A mixture of Java and Python that works within Cameo. Its used to automate the Python-based framework.", "Consistently update the GitLab so that you and your peers can work alognside each other."],
-			["Result", "Summarize approved outcomes such as improved usability, clearer model operations, or stronger systems engineering fluency."]
-		],
-		visuals: [
-			{ image: "reference_files/Python Logo.png", alt: "Python Logo", caption: "Python language was used to develop in-house plugins for other projects." },
-			{ image: "reference_files/CameoExample.png", alt: "Sample Cameo Pic", caption: "This is a sample project that models the components of a system and how they operate with each other." },
-		],
-		timeline: [
-			["Build", "Built and assisted in the development of several plugins. Implemented different computer science techniques to help automate the process and reduce human error."],
-			["Validation", "Underwent testing fazes for different plugins, provided feedback on testing, and handeled AI conversations such that I optimized a prompt that reduces the token usage."],
-			["Takeaway", "Working for Lockheed Martin provided an insght into how the industry handles product development and testing. Throughout my time with my team, I have been needed to develop several documents that go into detail on what the plugin is and does and how the plugin works."]
-		]
-	}
-};
-
-const enableDetailProfiles = false;
+const enableDetailProfiles = true;
 
 const detailProfileVisibility = {
 	experience: {
@@ -103,11 +28,86 @@ const detailProfileVisibility = {
 	}
 };
 
+const experienceDetails = {
+	"well-bilt": {
+		title: "Engineering Intern - Well Bilt Industries",
+		logo: "reference_files/WellBiltLogo.png",
+        intro: "This internship focused on building hangar doors and developing tools to help engineers. During this internship, I worked with SolidWorks to generate drawings, Risa to conduct analyses that determine if the door panels can withstand wind loads, python to build automation tools, Beamline to generate commands for machines to drill out hangar door beams, and Messer Nesting to develop laser cut metal parts. I worked with customers and Engineers to ensure that the product is delivered in a satisfactory way, ensuring that not only the technical requirements were met, but also the desired layout of the project is handled properly.",
+        facts: [
+			["Role", "Engineering Intern"],
+			["Focus Areas", "Python automation, RISA modeling, SolidWorks drawings, manufacturing support."],
+			["Main Impact Points", "Developed Python automation tools that reduced time to produce cut lists for client projects by 47%.", "Worked on client project models using SolidWorks and developed manufacturing-ready drawings.", "Worked with Engineers and clients to ensure satisfaction across all fields.", "Assisted in the manufacturing of laser cut parts and beams by producing files that assist machines in producing these parts, reducing time to produce client requests by 12%."]
+		],
+		panels: [
+			["Problem", "Clients building their hangars need doors capable of withstanding the thermal stresses and wind speeds quoted for their location."],
+			["Approach", "SolidWorks: Build hangar door models to develop manufacturing-ready drawings.", "Beamline: Produce files that give orders to machine on where to drill holes to attach clips.", "Messer Nesting: Make laser cut metal parts that are used for clips for connecting hangar doors and other parts that are helpful for helping employees keep track of material."],
+			["Result", "Clients get satisfied results that are long-term affordable solutions in reduced time."]
+		],
+		visuals: [
+			{ image: "reference_files/Python Cut List.jpeg", alt: "Python cut list automation example", caption: "Automated cut list program that displays the results after performing a merge and split of beam orders to maintain beam length orders (normally 20') and ensure all materials are ordered." },
+			{ image: "reference_files/General Door Calcs Excel Sheet.jpeg", alt: "Excel door calculation sheet example", caption: "Developed an Excel database that takes in door dimensions and panel count and spits out the Risa file best used to copy from. Also conducts calculations given wind speed and determines if the panel with the dimensions can handle the stresses." },
+			{ image: "reference_files/Risa Strctural Analysis.jpeg", alt: "Risa Structural Analysis grid points example", caption: "Example of hangar door via Risa Structural Analysis program. These grid points define beam connections where beams are connected via clips. The software produces a visual that shows the doors weakest and strongest points." },
+            { image: "reference_files/WellBiltFinalResult.png", alt: "Final Door Design Example", caption: "Example of a biparting hangar door being finally built."}
+		],
+		timeline: [
+			["Build", "Use Risa to ensure hangar door beams handle the wind loads with a sufficient safety factor of 10, SolidWorks to develop the drawings and ensure fast manufacturing processes, and Excel to develop cut lists necessary for building hangar doors."],
+			["Validation", "Validated Risa calculations by determining wind loads at the center point of each door frame and hand calculating the deflections."],
+			["Takeaway", "I learned how to take a design from concept to reality. I was able to assist and expedite the design and manufacturing processes for building client solutions while also building automation tools that assist engineers in purchasing materials by reducing time to generate cut lists by 47%."]
+		]
+	},
+	"code-meets-bagel": {
+		title: "Software Developer - Code Meets Bagel",
+        logo: "reference_files/cmb.jpg",
+        intro: "As an intern for Code Meets Bagel, I focused on developing proper documentation for an AI Slack Bot. I also helped in the development and testing of the AI. The purpose of this bot was to help a marketing team build marketing solution by integrating AI with other marketing software platforms.",
+		facts: [
+			["Role", "Software Developer"],
+			["Focus Areas", "Python, Slack bot development, Claude/OpenAI APIs, GitHub workflows, deployment."],
+			["Main Impact Points", "Managed testing infrastructure across several different Slack bots.", "Handled hierarchy of Slack bot communication.", "Implemented a method to decrease token usage by 11%."]
+		],
+		panels: [
+			["Problem", "A marketing team needed a bot that was capable of producing ads based on team requests."],
+			["Approach", "Slack: The framework where the bots were developed. Here, team members could interact with different bots and make requests for ad generation. The bot would develop a response and our program would parse it to determine what task was needed to be completed and how.", "OpenAI/Claude API: Used to handle bot queries to large language AI models (LLM).", "Python: The language that the Slack bots were built on. Using Python, I was able to develop test files that would test for different scenarios that the marketing team would come up with. Several runs were conducted to see what prompt would be most beneficial for explaining the role to the AI."],
+			["Result", "A Slack bot integrated with AI that's capable of handling consumer queries and breaking down what needs are to be met, how they need to be met, and what commands must be called."]
+		],
+		visuals: [
+        ],
+		timeline: [
+			["Build", "Create a simple bot within Slack capable of handling user mentions. Then, integrate the bot with AI so that the bot can handle regular conversations with a human."],
+			["Validation", "To validate, simply set up tests that are common scenarios for the team and run it with either different role descriptions or prompting that is said different but conveys the same message to understand how the bot will react and what the best response is."],
+			["Takeaway", "This experience was my introduction to API calls. Thanks to this experience, I not only understand how API calls work, but can also use this information to build software that requires outsourcing of data or making calls to an AI. I was able to successfully build my own AI Discord chat bot that helps me with homework and general queries."]
+		]
+	},
+	"lockheed-martin": {
+		title: "Systems Engineer - Lockheed Martin",
+		logo: "reference_files/lm_logo.jpg",
+		intro: "As a Systems Engineer with Lockheed Martin working under the ARISE Modeling Based Systems Engineering (MBSE) team, I focused on using Cameo to model stakeholder projects and Python to build automation projects within Cameo. I used Regex and AI based parsing to build a plugin that can parse code files for different project requirements. I implemented several methodologies and data structures to help automate the search and retrieval process of Cameo packages and GitLab files. Overall, I helped increase the productivity of the team members and of the stakeholders.",
+		facts: [
+			["Role", "Systems Engineer"],
+			["Focus Areas", "Cameo Systems Modeler, plugin development, Python backend logic, C++ simulation review."],
+			["Main Impact Points", "Enhanced in-house Cameo plugins to automate Engineering Processes using Python, reducing model generation and simulation timeframes from days to hours.", "Assisted in the generation of models using Cameo Systems Modeler that demonstrate project simulations.", "Implemented several CS concepts that reduced human error by allowing the program to conduct searches for packages and GitLab files, reducing model error by 37%.", "Testing different regular expression (regex) methods that capture desired parameters more accurately, increasing coverage of parameters by 25%.", "Implemented AI-based parsing to improve regex parsing, allowing for the plugin to adhere to different coding standard, improving parsing flexibility, and increasing accuracy of capturing parameters."]
+		],
+		panels: [
+			["Problem", "Other programs within Lockheed Martin need a way to model their projects such that others can read it well and it accurately describes what the project is focused on."],
+			["Approach", "Cameo Systems Modeler: Demonstrates how each part functions within a system and provides a friendly interface to model project integration.", "Jython: A mixture of Java and Python that works within Cameo. It's used to automate the Python-based framework.", "Consistently update the GitLab so that you and your peers can work alongside each other."],
+			["Result", "Improved plugin workflows, reduced model-generation and simulation timeframes from days to hours, and helped reduce model error by automating searches across Cameo packages and GitLab files."]
+		],
+		visuals: [
+			{ image: "reference_files/Python Logo.png", alt: "Python Logo", caption: "Python language was used to develop in-house plugins for other projects." },
+			{ image: "reference_files/CameoExample.png", alt: "Sample Cameo Pic", caption: "This is a sample project that models the components of a system and how they operate with each other." },
+		],
+		timeline: [
+			["Build", "Built and assisted in the development of several plugins. Implemented different computer science techniques to help automate the process and reduce human error."],
+			["Validation", "Underwent testing phases for different plugins, provided feedback on testing, and handled AI conversations such that I optimized a prompt that reduces the token usage."],
+			["Takeaway", "Working for Lockheed Martin provided an insight into how the industry handles product development and testing. Throughout my time with my team, I have been needed to develop several documents that go into detail on what the plugin is and does and how the plugin works."]
+		]
+	}
+};
+
 const researchDetails = {
 	"fsu-young-scholars": {
 		title: "FSU Young Scholars Program",
 		logo: "reference_files/FSU_LOGO.png",
-		intro: "Use this detail view to expand the perovskite LED research into a deeper story. Replace this text with the research question, lab context, materials studied, methods used, and what you presented.",
+		intro: "Through the FSU Young Scholars Program, I studied perovskite materials for LED applications under Professor Biwu Ma. The work focused on synthesizing DMEDA Lead(II) Bromide, learning materials characterization techniques, and presenting the research through a poster that explained the material structure and photophysical motivation.",
 		facts: [
 			["Research Area", "Perovskites, materials science, and LED applications."],
 			["Mentor / Lab", "Professor Biwu Ma, Biochemistry Department."],
@@ -115,8 +115,8 @@ const researchDetails = {
 		],
 		panels: [
 			["Research Question", "Light-emitting diodes (LED's) have become popular as of recently due to their applications in light emissions. Specifically, they have more economic benefits and an increased lifespan when compared to modern day fluorescent lights. The goal was to synthesize DMEDA Lead(II) Bromide to make one-dimensional organic metal halide hybrid with edge-sharing octahedrons and study its structural and photophysical properties."],
-			["Methods", "Manufacutre these perovskites using the vapor diffusion method.", "Crush crystals to a fine powder to avoid impurities.", "Conduct Single Crystal X-Ray Diffraction (SXRD) to study the structure of the material."],
-			["Outcome", "Summarize what you learned, presented, measured, or contributed to the research effort."]
+			["Methods", "Manufacture these perovskites using the vapor diffusion method.", "Crush crystals to a fine powder to avoid impurities.", "Conduct Single Crystal X-Ray Diffraction (SXRD) to study the structure of the material."],
+			["Outcome", "Presented the research findings through a poster, strengthened my understanding of materials characterization, and built a foundation in Python-based data analysis and quantum concepts that supported later technical work."]
 		],
 		visuals: [
 			{ image: "reference_files/IRP_Poster_Photo.jpg", alt: "FSU research poster presentation", caption: "Presented my poster on one dimensional organic metal halide hybrid perovskites." },
@@ -127,142 +127,101 @@ const researchDetails = {
             { image: "reference_files/Vapor Method.jpeg", caption: "Real image of the capsules that were left overnight so that the procurement process for these perovskites would happen." },
             { image: "reference_files/CIECoordinates.png", caption: "Commission Internationale de l'Eclairage (International Commission on Illumination) (CIE) coordinates for DMEDA Lead(II) Bromide. These coordinates help characterize the amount of light energy in the visible spectrum weighted by the human eye's spectral sensitivity."},
             { image: "reference_files/OneDimensionalCrystal.png", caption: "Example view of DMEDA Lead(II) Bromide at a molecular level. Vespa was used to produce the image of this crystal. This structure demonstrates one-dimensional structure since the structure is only stretching across one direction."}
-		],
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
+		],       
 		timeline: [
-			["Context", "Add program timeline, lab placement, and research motivation."],
-			["Experiment", "Add the materials, tools, and methods used."],
-			["Presentation", "Add thesis or poster details and audience."],
-			["Takeaway", "Add the materials science or research skills you gained."]
+			["Context", "Joined the FSU Young Scholars Program and worked in Professor Biwu Ma's lab studying perovskite materials for LED applications."],
+			["Experiment", "Synthesized DMEDA Lead(II) Bromide using vapor diffusion, prepared crystal samples, and studied structure using X-ray diffraction methods."],
+			["Presentation", "Built and presented a research poster explaining the material structure, color-emission behavior, and LED motivation behind the project."],
+			["Takeaway", "Gained early research experience in materials science, lab procedure, technical communication, Python data analysis, and quantum-related concepts."]
 		]
 	},
 	"opa": {
 		title: "Original Polyoculus Assembly (OPA)",
 		logo: "",
-		intro: "Use this detail view to explain the telescope assembly work, roof design, enclosure constraints, and support structure. Replace this placeholder with project scope and approved technical details.",
+		intro: "In the Original Polyoculus Assembly research effort, I supported telescope assembly work in UCF CREOL by contributing to roof concepts and support-structure planning for the deployed enclosure. The work connected mechanical design decisions with the constraints of protecting and operating an optical system.",
 		facts: [
 			["Research Area", "Astrophysics, optics, photonics, and mechanical design."],
 			["Mentor / Lab", "Professor Eikenberry, CREOL Department at UCF."],
-			["Main Impact Points", "Add design responsibility, CAD contribution, or build milestone here."]
+			["Main Impact Points", "Supported roof concept development for the telescope assembly enclosure.", "Assisted with support-structure planning around deployment and protection constraints.", "Applied CAD and mechanical design thinking to an optics-related research system."]
 		],
 		panels: [
-			["Problem", "Describe the telescope assembly, enclosure, deployment, and roof support challenge."],
-			["Approach", "Explain your roof design, support structure thinking, CAD workflow, and constraints."],
-			["Result", "Summarize the design output, review status, or how it supported the assembly project."]
+			["Problem", "The telescope assembly needed an enclosure and roof concept that could support deployment while protecting sensitive optical hardware from environmental and structural issues."],
+			["Approach", "Used CAD and mechanical design planning to think through roof geometry, enclosure fit, support-structure needs, and the practical constraints of deploying a telescope assembly from a protected container."],
+			["Result", "The design support helped clarify how the roof and support structure could fit into the larger assembly, giving the research team a clearer mechanical path for the deployed enclosure concept."]
 		],
 		visuals: [
-			{ image: "reference_files/Eikenberry Connex Box.jpg", alt: "OPA telescoping assembly connex enclosure", caption: "Add what this enclosure photo shows and how it relates to the assembly." },
-			{ image: "reference_files/EikenberryConnex.png", alt: "OPA design render", caption: "Add CAD, roof, or deployment notes for this visual." },
-			{ placeholder: "Add roof design sketch, support diagram, or deployment visual", caption: "Use this slot for a diagram that explains the mechanical design." }
+			{ image: "reference_files/Eikenberry Connex Box.jpg", alt: "OPA telescoping assembly connex enclosure", caption: "Connex enclosure used as part of the telescope assembly planning and protection concept." },
+			{ image: "reference_files/EikenberryConnex.png", alt: "OPA design render", caption: "Design render showing the enclosure concept and how roof or deployment features could integrate with the assembly." },
+			{ placeholder: "Roof support concept", caption: "Concept slot for showing how the roof, supports, and deployed telescope assembly relate mechanically." }
 		],
 		timeline: [
-			["Context", "Add the telescope assembly goal and operating constraints."],
-			["Design", "Add roof, support, CAD, and structural considerations."],
-			["Review", "Add feedback, iteration, or next-step details."],
-			["Takeaway", "Add what you learned about optics-related mechanical systems."]
+			["Context", "Supported an optics research project where the mechanical enclosure had to protect and support telescope assembly operation."],
+			["Design", "Worked through roof and support-structure ideas while considering deployment, enclosure space, and practical CAD constraints."],
+			["Review", "Used the design work to help communicate possible enclosure paths and support future iteration."],
+			["Takeaway", "Learned how mechanical design decisions support optics and photonics research hardware."]
 		]
 	},
 	"asrl": {
 		title: "Astrodynamics, Space, and Robotics Lab (ASRL)",
 		logo: "",
-		intro: "Use this detail view to expand on orbital path efficiency work, ROSS, and electronics housing drawings. Replace this text with project context, your responsibilities, and visuals that explain the research system.",
+		intro: "In ASRL, I worked under Professor Elgohary on orbital path efficiency research using ROSS and supported lab hardware through electronics housing drawings. This experience combined aerospace analysis tools with practical design documentation for research hardware.",
 		facts: [
 			["Research Area", "Astrodynamics, orbital path efficiency, robotics support hardware."],
 			["Mentor / Lab", "Professor Elgohary, Aerospace Engineering Department at UCF."],
-			["Main Impact Points", "Add drawing output, analysis contribution, or hardware support result here."]
+			["Main Impact Points", "Used ROSS in support of orbital path efficiency research.", "Assisted with electronics housing drawings for lab hardware.", "Connected analysis-focused research with mechanical documentation and hardware support."]
 		],
 		panels: [
-			["Problem", "Describe the orbital efficiency or electronics housing challenge."],
-			["Approach", "Explain ROSS usage, drawing support, CAD decisions, or requirements you worked from."],
-			["Result", "Summarize the research or design output and how it supported lab work."]
+			["Problem", "Orbital path efficiency research requires reliable analysis workflows, while lab hardware also needs clear housing drawings so electronics can be protected, mounted, and revised."],
+			["Approach", "Used ROSS to support orbital path efficiency research while also helping translate hardware needs into electronics housing drawings and design documentation."],
+			["Result", "The work supported both the analytical and hardware sides of the lab by contributing to orbital workflow understanding and producing drawings that helped define electronics housing needs."]
 		],
 		visuals: [
-			{ image: "reference_files/Screenshot 2024-11-03 170241.png", alt: "ASRL electronics housing drawing", caption: "Add notes about the housing drawing and design purpose." },
-			{ placeholder: "Add ROSS workflow, orbital path plot, or simulation visual", caption: "Use this slot for orbital analysis or software workflow visuals." },
-			{ placeholder: "Add electronics housing revision, requirement sketch, or final render", caption: "Show how the design evolved or what constraints guided it." }
+			{ image: "reference_files/Screenshot 2024-11-03 170241.png", alt: "ASRL electronics housing drawing", caption: "Electronics housing drawing used to support lab hardware planning and documentation." },
+			{ placeholder: "ROSS workflow visual", caption: "Concept slot for showing orbital analysis workflow, path plots, or simulation outputs." },
+			{ placeholder: "Electronics housing revision", caption: "Concept slot for showing how housing requirements and drawing revisions evolved." }
 		],
 		timeline: [
-			["Context", "Add lab objective and research scope."],
-			["Analysis", "Add ROSS, orbital path, or drawing workflow details."],
-			["Output", "Add deliverables, drawings, or review outcomes."],
-			["Takeaway", "Add skills gained in aerospace research and technical drawing."]
+			["Context", "Joined ASRL work focused on astrodynamics, orbital path efficiency, and robotics-related support hardware."],
+			["Analysis", "Used ROSS to support understanding of orbital path efficiency workflows and research objectives."],
+			["Output", "Assisted with electronics housing drawings that helped document hardware needs for the lab."],
+			["Takeaway", "Built experience at the intersection of aerospace research, analysis tools, and technical drawing."]
 		]
 	},
 	"nanoelectronics": {
 		title: "Nanophysics and Nanoelectronics Group",
 		logo: "",
-		intro: "Use this detail view to explain the quantum materials work, CVD growth, transfer stage, poster presentations, and future ML height-profile scripts. Replace this with lab-safe technical detail and results.",
+		intro: "In the Nanophysics and Nanoelectronics Group, I studied quantum materials by working with CVD-grown molybdenum disulfide, supporting transfer-stage development, presenting poster work, and exploring machine-learning approaches for height-profile prediction.",
 		facts: [
 			["Research Area", "Quantum materials, CVD-grown molybdenum disulfide, transfer stages, ML image analysis."],
 			["Mentor / Lab", "Professor Khondaker, Physics Department at UCF."],
-			["Main Impact Points", "Add poster result, device workflow, transfer-stage result, or ML goal here."]
+			["Main Impact Points", "Worked with CVD-grown molybdenum disulfide and nanomaterial thinning workflows.", "Supported heated transfer-stage development using cartridge heaters and PID control concepts.", "Presented poster work and explored ML-based height-profile prediction for future analysis."]
 		],
 		panels: [
-			["Problem", "Describe the material growth, transfer, thinning, or measurement challenge."],
-			["Approach", "Explain CVD growth, PC/PDMS transfer, cartridge heaters, PID control, or ML workflow."],
-			["Result", "Summarize poster findings, lab capability, device progress, or model goals."]
+			["Problem", "Quantum-material workflows require careful growth, transfer, thinning, and measurement methods so small material changes can be handled without damaging samples or losing useful data."],
+			["Approach", "Worked with CVD-grown molybdenum disulfide, learned transfer-stage concepts using PC/PDMS methods, connected heating control ideas to lab hardware, and explored how ML scripts could support future height-profile analysis."],
+			["Result", "The work contributed to poster-ready research communication, improved understanding of nanomaterial handling, and laid groundwork for future scripts that could predict or analyze material height profiles."]
 		],
 		visuals: [
-			{ image: "reference_files/PREM_PosterBoard1.jpg", alt: "Nanomaterials poster board", caption: "Add poster topic, result, and presentation context." },
-			{ image: "reference_files/Vapor Method.jpeg", alt: "Vapor method lab visual", caption: "Add how this method relates to growth or transfer work." },
-			{ placeholder: "Add transfer stage, microscope image, or ML height-profile visual", caption: "Use this slot for process photos, data, or model outputs." }
-		],
-		timeline: [
-			["Context", "Add lab goal and material system."],
-			["Fabrication", "Add CVD, transfer stage, heater, polymer, or controller details."],
-			["Analysis", "Add poster findings, measurements, or ML workflow."],
-			["Takeaway", "Add research skills in nanomaterials, controls, and computation."]
+			{ image: "reference_files/PREM_PosterBoard1.jpg", alt: "Nanomaterials poster board", caption: "Presented lab work on thinning nanomaterials using hot plate." },
 		]
 	},
 	"perl": {
 		title: "Propulsion and Energy Research Lab (PERL)",
-		logo: "",
-		intro: "Use this detail view to expand the combustion chamber, flashback, measurement software, Cantera scripts, condition calculator, and manufacturing work. Replace this placeholder with the project story and strongest visuals.",
+		logo: "AxialCombustionChamber.png",
+		intro: "My current lab is the Propulsion and Energy Research Lab (PERL), where I worked with the Axial Stage Combustion Chamber project and am currently working with the Mach 10 Oblique Detonation project. Both of these projects have taught me lots on propulsion concepts and how to design a rocket engine.",
 		facts: [
 			["Research Area", "Propulsion, combustion, hydrogen flashback, emissions, measurement software."],
 			["Mentor / Lab", "Professor Kareem Ahmed, Aerospace Engineering Department at UCF."],
-			["Main Impact Points", "Add calculator result, test support impact, manufacturing contribution, or software metric here."]
+			["Main Impact Points", "Created a calculator for the Axial Stage Combustion Chamber project that automates the calculations for determining the necessary conditions necessary to meet mission requirements, reducing time to generate standard facility inputs from several days to a few minutes.", "Contributed to the assembly of the Axial Stage Combustion Chamber Project.", "Looking over trade studies to understand the effects of Mach 10 speeds on a flight vehicle's surface and its internal components."]
 		],
 		panels: [
-			["Problem", "Describe the facility-condition, combustion, measurement, or manufacturing challenge."],
-			["Approach", "Explain Cantera scripts, condition calculator logic, GUI support, calculations, or assembly work."],
-			["Result", "Summarize the validated calculations, testing support, data workflow, or production improvement."]
+			["Problem", "The main problem when I was working with the Axial Stage Combustion Chamber project was that they didn't have a way to easily calculate the necessary conditions to run the requirements within the lab. An excel sheet was made to make these calculations, but to finish making the conditions would mean an engineer would take days and maybe even weeks to understand the Excel sheet and use it appropriately."],
+			["Approach", "Understand the Excel sheet: I would go cell by cell, writing down functions to understand what each calculation was used for. Then, I put everything together and conducted research on what each calculation meant and slowly understood how the calculator worked.", "Replicate the Chemical Equilibrium: Since the Excel calculator depended on NASA CEA and the calculator I was building was Python based, I had to choose between keeping the NASA CEA functionality and creating functions that would interpolate, or migrating to an automation process where I used either NASA CEA or Cantera in Python. Any of these options required me to build a class that would seamlessly integrate with the rest of the infrastructure that I had already built. Once I determined that I would stick with Cantera, I built a class that would return the current state of the gas to facilitate Cantera calls.", "Integrate: Not only did I have to learn all the fluid mechanics principles from scratch, but I also had to understand what it meant to calculate the chemical state of any gas given the composition. This meant extensive research and testing towards figuring out what's the best way to integrate all these concepts into one library that makes creating conditions seem effortless. Once I had that process going and finished the backend of the calculator, I focused on building the guided user interface (GUI) that would help users navigate the calculator and create basic conditions to run the facility with given requirements."],
+			["Result", "Due to my extensive work on the calculator, the team was able to generate conditions necessary to run the provided requirements from our stakeholders. The calculation process is now simple, effective, and quick, allowing for more allotted time dedicated to more important tasks."]
 		],
 		visuals: [
-			{ image: "reference_files/AxialCombustionChamber.png", alt: "Axial Stage Combustion Chamber hardware", caption: "Add what this hardware shows and your role in the project." },
-			{ image: "reference_files/SCC_GUI.png", alt: "Measurement software GUI", caption: "Add what the software measures and how it supports testing." },
-			{ placeholder: "Add condition calculator screenshot, Cantera plot, or assembly photo", caption: "Use this slot for code output, calculations, emissions plots, or manufacturing visuals." }
-		],
-		timeline: [
-			["Context", "Add project objective, facility requirements, and research scope."],
-			["Build", "Add calculator, software, Cantera, or manufacturing details."],
-			["Validation", "Add how calculations, measurements, or hardware were checked."],
-			["Takeaway", "Add propulsion, testing, software, and manufacturing skills gained."]
+			{ image: "reference_files/AxialCombustionChamber.png", alt: "Axial Stage Combustion Chamber hardware", caption: "Axial Stage Combustion Chamber hardware that I helped assemble while supporting facility condition calculations." },
+			{ image: "reference_files/SCC_GUI.png", alt: "Measurement software GUI", caption: "GUI used to make condition setup and measurement workflows easier to run for combustion-chamber testing." },
 		]
 	}
 };
@@ -270,288 +229,268 @@ const researchDetails = {
 const projectDetails = {
 	"kxr": {
 		title: "Knights Experimental Rocketry - Propulsion Director",
-		logo: "",
-		intro: "Use this detail view to expand the propulsion director role into a project case study. Replace this text with launch goals, propulsion architecture, test milestones, team responsibilities, and approved photos or diagrams.",
+		logo: "reference_files/KXR_LOGO.png",
+		intro: "My freshman year, I started out as the propulsion lead for the 2025 IREC team, where I focused my efforts on researching different propellant grains and learning the specifics on combustion chamber design for solid propellant motors. My sophomore year, I became the propulsion director and directed my efforts towards helping other students learn more about the basics of propulsion development. Now, I work under the launch and test infrastructure group, where I help develop the software and hardware necessary to test different rockets and/or motors.",
 		facts: [
 			["Category", "Club leadership, propulsion, experimental rocketry."],
-			["Tools / Skills", "Heat transfer, bolt stress, thrust, impulse, chamber testing, payload-frame design."],
-			["Main Impact Points", "Add static-fire result, design milestone, team contribution, or certification progress here."]
-		],
-		panels: [
-			["Problem", "Describe the propulsion system goal, testing constraints, safety requirements, and team needs."],
-			["Approach", "Explain chamber design, assembly management, calculations, static-fire preparation, and payload-frame work."],
-			["Result", "Summarize the test outcomes, design progress, lessons learned, or leadership impact."]
+			["Tools / Skills", "Heat transfer, bolt stress, thrust, impulse, chamber testing, payload-frame design, leadership."],
+			["Main Impact Points", "Contributed to the overall design of the 2025 IREC motor and handling the assembly.", "Applied propulsion fundamentals from previous lab work as the propulsion director and led propulsion initiatives across 3 teams."]
 		],
 		visuals: [
-			{ video: "reference_files/old_solidprop_test.mp4", caption: "Add what this static-fire or propulsion test demonstrates." },
-			{ image: "reference_files/SolidworksScale.jpeg", alt: "SolidWorks test stand model", caption: "Use this slot for propulsion-related CAD, tooling, or fixture work." },
-			{ placeholder: "Add chamber assembly photo, payload frame CAD, or thrust curve", caption: "Use this for the most recruiter-friendly visual proof of the project." }
-		],
-		timeline: [
-			["Context", "Add project mission, competition goal, or propulsion subsystem objective."],
-			["Design", "Add calculations, CAD, chamber assembly, and hardware decisions."],
-			["Test", "Add static-fire process, safety checks, data collected, and results."],
-			["Takeaway", "Add what the role taught you about propulsion leadership and testing discipline."]
+			{ image: "reference_files/PayloadChassisIrec2025.png", caption: "Designed first revisions of payload 3U CubeSat for the 2025 IREC competition for KXR." },
+			{ image: "reference_files/IRECROCKETMOTOR.png", caption: "As the propulsion lead of the KXR IREC 2025 rocket, I oversaw the design of the rocket motor and handled the assembly of it."}
 		]
 	},
 	"baja-sae": {
 		title: "Knights Racing BAJA SAE",
-		logo: "",
-		intro: "Use this detail view to expand the Baja SAE work into a mechanical design case study. Replace this intro with the subsystem, design constraints, manufacturing process, and competition relevance.",
+		logo: "reference_files/BAJA_SAE_LOGO.png",
+		intro: "During my freshman year being at the University of Central Florida, I worked with several college students to design, assemble, and test the 2025-2026 UCF BAJA SAE vehicle. I worked more on using SolidWorks to design different parts that were later going to be used as part of the assembly of the vehicle. Furthermore, I expanded my knowledge on 3D modeling and used configurations to streamline different design ideas in SolidWorks.",
 		facts: [
 			["Category", "Club project, vehicle design, mechanical analysis."],
 			["Tools / Skills", "CAD, suspension hardware, tabs, spacers, maintenance stand design, FEA."],
-			["Main Impact Points", "Add manufactured parts, FEA result, design approval, or car subsystem outcome here."]
+			["Main Impact Points", "Finite Element Analysis", "Suspension Design", "BAJA Support Stand"]
 		],
 		panels: [
-			["Problem", "Describe the vehicle or suspension design challenge, packaging limits, and loading conditions."],
-			["Approach", "Explain CAD iterations, FEA setup, material assumptions, and fabrication considerations."],
-			["Result", "Summarize the final parts, analysis confidence, or how the work supported the Baja car."]
+			["Problem", "I had to design parts that could withstand the vehicle weight and stresses handled when operating the vehicle."],
+			["Approach", "Verified stand design with hand calculations and FEA analysis on SolidWorks.", "Modeled suspension tabs on SolidWorks and planned for a safety factor of 5 for handling vehicle weight.", "Modeled suspension bearing for more range of motion throughout vehicle operation."],
+			["Result", "Resulted in a vehicle design that was built on a trustworthy stand, had adjustable suspension tabs for 3 heights, and had more range of motion of the suspensions."]
 		],
 		visuals: [
-			{ placeholder: "Add suspension spacer, tab, or maintenance stand CAD", caption: "Use this for the strongest design visual." },
-			{ placeholder: "Add FEA stress plot or factor-of-safety screenshot", caption: "Show how the material or geometry was validated." },
-			{ placeholder: "Add manufactured part or car integration photo", caption: "Use this slot to show real hardware if available." }
-		],
-		timeline: [
-			["Context", "Add the Baja subsystem and design requirements."],
-			["Design", "Add part geometry, CAD process, and revision notes."],
-			["Analysis", "Add FEA setup, boundary conditions, and material choice."],
-			["Takeaway", "Add what you learned about vehicle design and manufacturable parts."]
+			{ image: "reference_files/BallBearingSpacer.png", caption: "Designed spacer that goes between suspension tab and suspension itself to improve range of motion for the suspension." },
+			{ image: "reference_files/Rev1_CarStand.png", caption: "First revision of BAJA support stand." },
+			{ image: "reference_files/Rev2_CarStand.png", caption: "Second revision of BAJA support stand." },
+			{ image: "reference_files/Rev3_CarStand.png", caption: "Final revision of BAJA support stand." },
+			{ image: "reference_files/Rev3_CarStandDeformation.png", caption: "BAJA support stand going through FEA analysis calculations." },
+			{ image: "reference_files/SuspensionTabNormal.png", caption: "Final design of adjustable suspension tabs." },
+			{ image: "reference_files/SuspensionTabDeformation.png", caption: "Suspension tabs going through FEA analysis calculations." }
 		]
 	},
 	"shpe": {
 		title: "Society of Hispanic Professional Engineers",
 		logo: "",
-		intro: "Use this detail view to expand SHPE leadership, projects, outreach, and ResearchSHPE work. Replace this with event outcomes, leadership scope, collaboration details, and photos.",
+		intro: "My freshman year, I focused on being the volunteer director, expanding outreach to 5 new volunteering initiatives. My sophomore year, I became the ResearchSHPE director, helping other students learn how to obtain research positions and being the point of contact for lab tours across 3 labs. My junior year, I became the projects competitions director and led 5 groups of students to design, build, test, and budget their projects.",
 		facts: [
 			["Category", "Student organization, leadership, outreach, project coordination."],
-			["Roles", "Projects Committee Payloads Team, ResearchSHPE Co-Director, Volunteer Director."],
-			["Main Impact Points", "Add event attendance, volunteer hours, collaborations, or payload milestone here."]
+			["Roles", "Projects Committee Payloads Team, Volunteer Director, ResearchSHPE Co-Director, Competitions Director."],
+			["Main Impact Points", "Increased volunteering contacts by 15% during my time as Volunteer Director.", "Maintained a member retention during the Fall semester of around 30+ students per meeting during my time as ResearchSHPE Director.", "Maintained a budget of 625 dollars distributed across 5 teams and ensured each team managed their budget appropriately and responsibly."]
 		],
 		panels: [
-			["Problem", "Describe the student need, outreach goal, or project collaboration SHPE supported."],
-			["Approach", "Explain how you coordinated events, organized volunteers, or contributed to payload design."],
-			["Result", "Summarize student impact, project progress, or community engagement outcomes."]
+			["Problem", "As a director, maintaining students and providing worthy content for them to digest is difficult as they have important issues they have to attend to and have to manage their time towards their studies. Furthermore, being part of the payload team my freshman year meant I had to design a payload that would be within the restrictions of the 3U NASA CubeSat requirements."],
+			["Approach", "Develop an outline of what you are going to design, whether it's a part or a timeline. What was it that I was trying to achieve?", "Work around those requirements and start defining specific points and see if that lines up with your goals.", "Continue iterating until you have a desired timeline for meetings or a design that you prefer to have that not only meets requirements, but also goes above and beyond in some measure."],
+			["Result", "Overall, I have helped various students learn more about the opportunities they have at hand and helped them take advantage of those opportunities. Furthermore, as the payloads team member during my freshman year, I was able to directly contribute to the overall design of the payload for that year, which led to an easier implementation of internal parts and the development of the drawings."]
 		],
 		visuals: [
-			{ image: "reference_files/SHPE Logo.jpg", alt: "SHPE logo", caption: "Add chapter, role, or event context here." },
-			{ image: "reference_files/Beach Cleanup Volunteering.jpeg", alt: "SHPE beach cleanup volunteering event", caption: "Add volunteer role, event impact, or collaboration details." },
-			{ image: "reference_files/SHPE Beach Volunteer.jpeg", alt: "SHPE volunteer event", caption: "Use this slot for another outreach or leadership visual." }
+			{ image: "reference_files/Beach Cleanup Volunteering.jpeg", alt: "SHPE beach cleanup volunteering event", caption: "Beach cleanup event." },
+			{ image: "reference_files/SHPE Beach Volunteer.jpeg", alt: "SHPE volunteer event", caption: "Beach cleanup event." },
+			{ image: "reference_files/PayloadChassisIrec2025.png", caption: "Designed the initial revisions of the 2025 payload by developing the chassis where internal components are going to be stored." },
 		],
 		timeline: [
-			["Context", "Add SHPE chapter goals and your leadership responsibilities."],
-			["Plan", "Add event planning, project coordination, or outreach workflow."],
-			["Execute", "Add photos, attendance, logistics, or collaborations."],
-			["Takeaway", "Add what this taught you about leadership and engineering community-building."]
+			["Context", "Build connections with other students.", "Make a welcoming environment for people of all backgrounds.", "Help students develop themselves professionally, academically, and through technical projects."],
+			["Plan", "Determine what you want students to get out of the program by the end of its term and work around that.", "Design a framework that works for all students given their time commitments.", "Meet with each student individually, and when they can't attend, coordinate an accommodation plan with them.", "Add buffer time in case plan A doesn't go accordingly."],
+			["Execute", "Once I had my plan, I would move forward with it and make sure that the students are adhering to their commitments. Furthermore, as part of a team, I would commit to my tasks and put forth the effort necessary to carry out that task."],
+			["Takeaway", "As a Payloads team member and consistent director throughout my years with SHPE, I contributed to designing, revising, and improving different plans/goals by breaking larger goals into clear, trackable tasks. Even when a plan didn't work perfectly on the first attempt, I adjusted quickly, executed the next iteration, and verified each milestone before moving forward. I hold my work to a high standard and focus on delivering results that are genuinely solid - not just 'good enough'."]
 		]
 	},
 	"solid-propellant": {
 		title: "Solid Propellant Motor Project",
-		logo: "",
-		intro: "Use this detail view as the most complete project template: explain the motor objective, propellant formulation, measurement setup, C++ sensor work, and test stand iterations.",
+		logo: "reference_files/solid_propellant_scale.jpeg",
+		intro: "In this project, I focused on building solid rocket motors out of potassium nitrate, sorbitol, and metal oxides. I tested against different fuel percentages and gathered data by making an in-house scale that would record and send data to my computer. Through this experience, I learned lots about coding in C++, designing in both SolidWorks and OnShape, and the importance of wearing proper PPE or other equipment when handling explosives and sensitive electronics.",
 		facts: [
 			["Category", "Personal engineering project, propulsion, instrumentation."],
 			["Tools / Skills", "C++, strain gauges, HX711 load scale, SolidWorks, propellant casting, test stand design."],
-			["Main Impact Points", "Add thrust data, test count, formulation comparison, or measurement accuracy result here."]
+			["Main Impact Points", "Achieved a peak thrust of 55 N for a propellant with 10% red iron oxide, which is 73% of the simulated peak thrust.", "Soldered an HX711 to the strain gauge and arduino nano.", "Adhered to the standard 35/65 fuel/oxidizer ratio as I started out and worked my way to 30/70 fuel/oxidizer.", "Did several different studies across different fuel and O/F ratios."]
 		],
 		panels: [
-			["Problem", "Describe the need for reliable thrust measurement and repeatable solid propellant testing."],
-			["Approach", "Explain propellant compositions, sensor wiring, HX711 integration, C++ scripts, and stand iterations."],
-			["Result", "Summarize test outcomes, what changed between stand versions, and what data you plan to collect next."]
+			["Problem", "Rockets need a way to reach their apogee. Liquid bi-propellant motors are a great effective option for a long-term investment, but they're expensive and require lots of engineers to handle that. The next best option would be to build a solid propellant rocket motor that can be assembled quickly and implemented effortlessly, creating a need for the design and build of solid propellant rocket motors."],
+			["Approach", "Ran experimentation for 10/30/60 metal oxide/sorbitol/potassium nitrate across several different metal oxides.", "Developed a streamlined process that can be followed to quickly make solid propellants and provided documentation that can be followed for proper safety.", "Built ignitors using solid propellants and nichrome wire.", "Developed several iterations of a test stand to improve the stability, reduce vibrations, provide better housing for the electronics bay, and get better data during tests."],
+			["Result", "Due to the commitment I gave to this project and the testing I conducted, this project came out to be a success across several different areas. I was able to apply the concepts of propulsion to my own personal project, conduct hand calculations and validate them using appropriate software such as OpenMotor and my own Python-based calculator, and explore an area of propulsion that is not so common. I gained first-hand experience in testing and design of solid propellant rocket motors, learned the necessary procedures to avoid any accidents when working on these projects, and applied propulsion concepts that I had learned from a textbook and from my own lab."]
 		],
 		visuals: [
-			{ image: "reference_files/solid_propellant_scale.jpeg", alt: "Solid propellant thrust measurement test stand", caption: "Add what this scale measures and how it improved test quality." },
-			{ image: "reference_files/SolidworksScale.jpeg", alt: "SolidWorks model of the test stand scale", caption: "Add CAD design intent, fixture constraints, or sensor placement notes." },
-			{ video: "reference_files/old_solidprop_test.mp4", caption: "Early ignition test. Add safety context, setup notes, and what changed afterward." }
+			{ image: "reference_files/solid_propellant_scale.jpeg", alt: "Solid propellant thrust measurement test stand", caption: "In-house thrust measurement scale used to record motor test data and improve test quality." },
+			{ image: "reference_files/SolidworksScale.jpeg", alt: "SolidWorks model of the test stand scale", caption: "SolidWorks model of the test stand used to plan fixture layout, electronics housing, and sensor placement." },
+			{ video: "reference_files/old_solidprop_test.mp4", caption: "Early ignition test that informed later improvements to the scale, setup stability, and test procedure." }
 		],
-		timeline: [
-			["Context", "Add why you started the motor project and what performance questions you wanted to answer."],
-			["Build", "Add propellant casting, test stand design, load-cell electronics, and C++ data collection."],
-			["Test", "Add static-fire setup, measurements, observations, and design changes."],
-			["Takeaway", "Add what this taught you about propulsion experimentation, instrumentation, and safety."]
-		]
 	},
 	"digital-ad-ai": {
 		title: "Digital Advertising AI",
 		logo: "",
-		intro: "Use this detail view to turn the AI advertising tool into a software case study. Replace this text with the user problem, model workflow, data inputs, and example insights.",
+		intro: "Digital Advertising AI is a Python Tkinter tool that uses Google's Gemma AI model to interpret market trends and ad-performance information. The goal is to help users make clearer campaign decisions by turning scattered advertising inputs into readable recommendations.",
 		facts: [
 			["Category", "Personal software project, AI-assisted analytics."],
 			["Tools / Skills", "Python, Tkinter, Google's Gemma AI model, market trend interpretation."],
-			["Main Impact Points", "Add sample input, output insight, model behavior, or workflow result here."]
+			["Main Impact Points", "Built a Tkinter interface for entering advertising and market-trend context.", "Integrated Google's Gemma AI model into a decision-support workflow.", "Focused the project on translating campaign data into clearer recommendations."]
 		],
 		panels: [
-			["Problem", "Describe the advertising decision or market-analysis problem the tool helps solve."],
-			["Approach", "Explain the Tkinter interface, data inputs, prompt strategy, model response, and output format."],
-			["Result", "Summarize what the tool can generate, how it helps users, and what you plan to improve."]
+			["Problem", "Advertising decisions can be difficult when market trends, campaign performance, and audience signals are separated across different sources."],
+			["Approach", "Built a Python Tkinter interface that gathers user inputs, sends structured context to Google's Gemma AI model, and returns interpretation that is easier to act on."],
+			["Result", "The tool acts as an AI-assisted workflow for reading market and ad-performance information, helping users compare campaign direction and identify stronger next steps."]
 		],
 		visuals: [
-			{ placeholder: "Add Tkinter interface screenshot", caption: "Show the user workflow and key controls." },
+			{ placeholder: "Tkinter interface", caption: "Interface area for entering campaign or market-trend context." },
 			{ placeholder: "Add sample ad performance input or trend chart", caption: "Use this for data that the AI interprets." },
-			{ placeholder: "Add AI recommendation output", caption: "Show what the tool produces after analysis." }
+			{ placeholder: "AI recommendation output", caption: "Output area where the model returns campaign interpretation and suggested direction." }
 		],
 		timeline: [
-			["Context", "Add why you built the tool and who it helps."],
-			["Build", "Add interface, model integration, and data-processing details."],
-			["Test", "Add sample data, outputs, and any validation process."],
-			["Takeaway", "Add what you learned about AI interfaces and decision-support tools."]
+			["Context", "Built the tool to make campaign and market-trend interpretation easier to use in advertising decisions."],
+			["Build", "Created a Tkinter interface, connected it to Google's Gemma AI model, and shaped the inputs around campaign context."],
+			["Test", "Used sample advertising scenarios to evaluate whether the AI responses were useful and readable."],
+			["Takeaway", "Learned how AI interfaces can turn broad data into practical decision-support workflows."]
 		]
 	},
 	"electric-generator": {
 		title: "Electric Generator",
 		logo: "",
-		intro: "Use this detail view to expand the generator build into an electromechanical project story. Replace this text with the induction concept, 3D printed parts, bike integration goals, and test plan.",
+		intro: "This project focuses on building an electromagnetic induction generator with 3D printed parts and moving toward an electric bicycle application. The work combines mechanical integration, printed prototypes, and generator testing to understand how motion can be converted into usable electrical output.",
 		facts: [
 			["Category", "Personal electromechanical project."],
 			["Tools / Skills", "Electromagnetic induction, 3D printing, mechanical integration, generator testing."],
-			["Main Impact Points", "Add voltage output, prototype stage, print iteration, or bike integration result here."]
+			["Main Impact Points", "Built around electromagnetic induction principles.", "Used 3D printed parts to prototype the generator structure.", "Worked toward integrating the generator concept with an electric bicycle use case."]
 		],
 		panels: [
-			["Problem", "Describe what electrical or mechanical requirement the generator needs to meet."],
-			["Approach", "Explain coil/magnet layout, printed parts, mounting strategy, and test method."],
-			["Result", "Summarize prototype progress, output measurements, issues found, and next iteration."]
+			["Problem", "A bike-mounted generator needs to turn rotational motion into electrical energy while staying compact, mountable, and mechanically stable."],
+			["Approach", "Used electromagnetic induction concepts, 3D printed components, and prototype testing to explore how the generator could be mounted and improved for a bicycle application."],
+			["Result", "The project developed into an electromechanical prototype path that connects induction theory with printed hardware and future output testing."]
 		],
 		visuals: [
-			{ placeholder: "Add generator CAD or 3D printed part photo", caption: "Show the mechanical design and printed components." },
-			{ placeholder: "Add wiring, coil, or magnet arrangement", caption: "Explain the induction setup visually." },
+			{ placeholder: "Generator CAD or printed part", caption: "Mechanical design area for showing the printed components and mounting concept." },
+			{ placeholder: "Coil and magnet arrangement", caption: "Induction setup area for explaining how motion creates electrical output." },
 			{ placeholder: "Add voltage test, bike mount, or bench setup", caption: "Use this for measured output or integration proof." }
 		],
 		timeline: [
-			["Context", "Add the bike-use case and power goal."],
-			["Design", "Add induction layout and printed-part decisions."],
-			["Prototype", "Add assembly, test setup, and measurements."],
-			["Takeaway", "Add what you learned about electromechanical prototyping."]
+			["Context", "Started from the idea of using bike motion as a source for generating electrical power."],
+			["Design", "Explored induction layout, printed-part geometry, and how the generator could fit into a bicycle system."],
+			["Prototype", "Used 3D printed parts and bench-style testing to develop the generator concept."],
+			["Takeaway", "Built experience connecting electromagnetic theory with mechanical prototyping and integration constraints."]
 		]
 	},
 	"robotic-arm": {
 		title: "Robotic Arm",
 		logo: "",
-		intro: "Use this detail view to expand the robotic arm into a controls and hardware project. Replace this with actuator choices, control method, Arduino/Raspberry Pi architecture, and photos.",
+		intro: "The robotic arm project is a personal robotics build centered on remote control, embedded electronics, and mechanical motion. I designed the project around an Arduino Uno R3 while planning a Raspberry Pi upgrade to expand the control architecture and future capabilities.",
 		facts: [
 			["Category", "Personal robotics project."],
 			["Tools / Skills", "Arduino Uno R3, Raspberry Pi planning, remote control, mechanical design, embedded systems."],
-			["Main Impact Points", "Add degrees of freedom, control mode, prototype stage, or demo result here."]
+			["Main Impact Points", "Built around Arduino Uno R3 control.", "Focused on remote-controlled motion and mechanical design.", "Planned Raspberry Pi controller upgrades for expanded capability."]
 		],
 		panels: [
-			["Problem", "Describe what motion, control, or manipulation task the arm is designed for."],
-			["Approach", "Explain the controller, wiring, remote-control logic, joints, and planned Raspberry Pi upgrade."],
-			["Result", "Summarize current motion capability, control reliability, and next hardware/software step."]
+			["Problem", "A robotic arm needs coordinated mechanical motion and reliable control electronics so a user can operate joints predictably from a remote interface."],
+			["Approach", "Used an Arduino Uno R3 as the initial controller, developed the project around remote-control behavior, and planned a Raspberry Pi upgrade for more advanced processing and control options."],
+			["Result", "The project became a practical robotics platform for learning embedded systems, control logic, wiring, and the mechanical limits of a moving arm assembly."]
 		],
 		visuals: [
-			{ placeholder: "Add robotic arm CAD or prototype photo", caption: "Show the physical mechanism." },
-			{ placeholder: "Add wiring diagram or Arduino setup", caption: "Show the control electronics." },
-			{ placeholder: "Add remote-control interface or motion demo", caption: "Show how a user operates it." }
+			{ placeholder: "Robotic arm prototype", caption: "Physical mechanism area for showing joints, structure, and range of motion." },
+			{ placeholder: "Arduino control setup", caption: "Electronics area for showing wiring, controller layout, and signal flow." },
+			{ placeholder: "Remote-control demo", caption: "Operation area for showing how a user controls the arm." }
 		],
 		timeline: [
-			["Context", "Add the project goal and desired arm capabilities."],
-			["Build", "Add mechanical design, electronics, and control logic."],
-			["Test", "Add motion tests, limits, and improvements."],
-			["Takeaway", "Add what you learned about robotics integration."]
+			["Context", "Started the project to learn how mechanical arm motion, embedded electronics, and user control fit together."],
+			["Build", "Used Arduino-based control while planning a Raspberry Pi upgrade for a more capable architecture."],
+			["Test", "Focused testing around motion behavior, controller response, and what the next hardware iteration needs."],
+			["Takeaway", "Learned how robotics projects require mechanical design, wiring, control logic, and iteration to work together."]
 		]
 	},
 	"physics-calculator": {
 		title: "Physics Calculator",
 		logo: "",
-		intro: "Use this detail view to expand the calculator into a software learning tool. Replace this text with supported equations, calculus processes, interface design, and example outputs.",
+		intro: "The Physics Calculator is a personal educational software project built to make physics and calculus workflows easier to follow. It focuses on clearer equations, organized inputs, and readable outputs so problem-solving steps feel less scattered.",
 		facts: [
 			["Category", "Personal educational software project."],
 			["Tools / Skills", "Physics equations, calculus processes, input validation, interface logic."],
-			["Main Impact Points", "Add supported modules, example solution, or learning outcome here."]
+			["Main Impact Points", "Created a multi-purpose calculator for physics and calculus workflows.", "Focused on clearer equation handling, user inputs, and outputs.", "Used the project to practice interface logic and input validation."]
 		],
 		panels: [
-			["Problem", "Describe the physics or calculus workflows the calculator makes easier to understand."],
-			["Approach", "Explain equation modules, user inputs, step display, and validation."],
-			["Result", "Summarize what the calculator solves and how it demonstrates concepts."]
+			["Problem", "Physics and calculus problems can become difficult to track when equations, variable inputs, and final outputs are handled separately."],
+			["Approach", "Built calculator logic around structured inputs, equation handling, output formatting, and validation so users can move through a problem more clearly."],
+			["Result", "The tool demonstrates physics and calculus processes through a more organized calculation workflow, helping users see how inputs connect to final results."]
 		],
 		visuals: [
-			{ placeholder: "Add calculator UI screenshot", caption: "Show the main interface and inputs." },
+			{ placeholder: "Calculator interface", caption: "Main input and output area for solving physics or calculus problems." },
 			{ placeholder: "Add sample physics calculation", caption: "Use this for an example problem and output." },
-			{ placeholder: "Add calculus process or step-by-step display", caption: "Show how the tool teaches the process." }
+			{ placeholder: "Calculation process", caption: "Process area for showing how the tool connects equations, inputs, and outputs." }
 		],
 		timeline: [
-			["Context", "Add why you built the calculator and what topics it covers."],
-			["Build", "Add equation handling, UI, and validation details."],
-			["Test", "Add example problems and result checks."],
-			["Takeaway", "Add what you learned about educational tools and numerical logic."]
+			["Context", "Built the calculator to practice software logic while making technical problem-solving easier to follow."],
+			["Build", "Developed equation handling, input validation, and output organization around physics and calculus workflows."],
+			["Test", "Checked the tool against example problems to confirm that inputs and outputs followed the intended equations."],
+			["Takeaway", "Learned how educational tools depend on both correct math logic and a clear user workflow."]
 		]
 	},
 	"data-visualization": {
 		title: "Data Visualization",
 		logo: "",
-		intro: "Use this detail view to expand the Excel-to-plot executable into a data workflow case study. Replace this text with file formats, plotting options, and example charts.",
+		intro: "The Data Visualization project is a Python executable that turns Excel spreadsheet data into quick scatter-plot summaries. It was built to make spreadsheet data easier to inspect visually without requiring a long manual plotting process each time.",
 		facts: [
 			["Category", "Personal Python data project."],
 			["Tools / Skills", "Python, Excel data, executable packaging, scatter plots, data cleaning."],
-			["Main Impact Points", "Add dataset size, chart examples, packaging result, or workflow time saved here."]
+			["Main Impact Points", "Built a Python workflow for reading Excel data.", "Generated scatter plots from spreadsheet inputs.", "Packaged the workflow as an executable to make it easier to run."]
 		],
 		panels: [
-			["Problem", "Describe the spreadsheet-to-visualization workflow this project simplifies."],
-			["Approach", "Explain Excel parsing, axis selection, plotting logic, and executable packaging."],
-			["Result", "Summarize the generated visuals and how users can interpret the data faster."]
+			["Problem", "Spreadsheet data can be slow to interpret when users have to manually create plots before seeing trends or relationships."],
+			["Approach", "Used Python to parse Excel data, convert selected values into scatter plots, and package the process into an executable workflow."],
+			["Result", "The project makes it faster to turn spreadsheet rows into visual summaries, helping users compare data patterns more quickly."]
 		],
 		visuals: [
-			{ placeholder: "Add sample Excel input", caption: "Show what the tool reads." },
-			{ placeholder: "Add generated scatter plot", caption: "Show the output chart." },
-			{ placeholder: "Add executable UI or command workflow", caption: "Show how a user runs it." }
+			{ placeholder: "Sample Excel input", caption: "Input area for showing the spreadsheet data the tool reads." },
+			{ placeholder: "Generated scatter plot", caption: "Output area for showing the chart created from the spreadsheet." },
+			{ placeholder: "Executable workflow", caption: "Run workflow area for showing how a user starts the packaged tool." }
 		],
 		timeline: [
-			["Context", "Add why the plotting workflow was useful."],
-			["Build", "Add parsing, plotting, and packaging details."],
-			["Validate", "Add test spreadsheets and output checks."],
-			["Takeaway", "Add what you learned about data tooling."]
+			["Context", "Built the project to reduce the friction of turning spreadsheet data into visual insight."],
+			["Build", "Created the Python parsing and plotting workflow, then packaged it so the tool could run as an executable."],
+			["Validate", "Checked spreadsheet inputs against generated scatter plots to confirm the data was being visualized correctly."],
+			["Takeaway", "Learned how data tools need both reliable parsing and a simple workflow for the user."]
 		]
 	},
 	"c-programs": {
 		title: "C Programs",
 		logo: "",
-		intro: "Use this detail view to expand the C programming projects into a fundamentals portfolio section. Replace this text with program goals, algorithms, and screenshots of console output.",
+		intro: "The C Programs section groups console-based projects I built to practice programming fundamentals. These programs include a quadratic calculator, dominoes simulator, and business manager, giving me practice with procedural logic, user input, simulations, and basic data handling.",
 		facts: [
 			["Category", "Personal programming fundamentals projects."],
 			["Tools / Skills", "C, procedural programming, console interaction, simulation, business logic."],
-			["Main Impact Points", "Add program features, input/output examples, or concepts practiced here."]
+			["Main Impact Points", "Created a quadratic calculator to practice formula implementation and input handling.", "Built a dominoes simulator to practice game-state logic and procedural control flow.", "Developed a business manager program to practice menus, data organization, and console interaction."]
 		],
 		panels: [
-			["Problem", "Describe what each C program was built to practice or simulate."],
-			["Approach", "Explain data structures, loops, conditionals, functions, and user interaction."],
-			["Result", "Summarize the finished programs and the programming concepts demonstrated."]
+			["Problem", "Learning C requires practice with precise control flow, user input, functions, and memory-conscious program structure."],
+			["Approach", "Built several console programs that rely on loops, conditionals, functions, menus, and structured input/output to solve or simulate different problems."],
+			["Result", "The finished programs demonstrate core C fundamentals through practical examples instead of isolated exercises."]
 		],
 		visuals: [
-			{ placeholder: "Add quadratic calculator console output", caption: "Show inputs, formula handling, and results." },
-			{ placeholder: "Add dominoes simulator screenshot", caption: "Show game state or simulation logic." },
-			{ placeholder: "Add business manager menu or data output", caption: "Show the program structure and user flow." }
+			{ placeholder: "Quadratic calculator output", caption: "Console output area for showing inputs, formula handling, and results." },
+			{ placeholder: "Dominoes simulator state", caption: "Console output area for showing game state or simulation logic." },
+			{ placeholder: "Business manager menu", caption: "Console output area for showing program structure and user flow." }
 		],
 		timeline: [
-			["Context", "Add course or self-learning goal."],
-			["Build", "Add program architecture and functions."],
-			["Test", "Add example inputs and edge cases."],
-			["Takeaway", "Add what you learned about C and structured programming."]
+			["Context", "Built these programs to strengthen C fundamentals through small, focused console applications."],
+			["Build", "Used functions, conditionals, loops, and menu-driven user interaction across different program types."],
+			["Test", "Ran example inputs and checked outputs to confirm that calculations, simulations, and menu flows behaved correctly."],
+			["Takeaway", "Learned how structured programming habits make C projects easier to test, extend, and reason through."]
 		]
 	},
 	"discord-ai-bot": {
 		title: "Discord AI Bot",
 		logo: "",
-		intro: "Use this detail view to expand the Discord AI bot into a software systems project. Replace this with bot commands, moderation features, AI workflow, and example engineering-help interactions.",
+		intro: "The Discord AI Bot is a personal software project built to help monitor servers, assist students with time-consuming tasks, and provide code-aware responses for engineering problems. It combines Discord bot development with AI-assisted reasoning in a conversational environment.",
 		facts: [
 			["Category", "Personal AI bot project."],
 			["Tools / Skills", "Discord bot development, AI assistance, server monitoring, code-assisted problem solving."],
-			["Main Impact Points", "Add command count, server use case, response example, or engineering problem solved here."]
+			["Main Impact Points", "Developed a Discord bot for AI-assisted conversations.", "Focused on student support, server monitoring, and engineering problem solving.", "Applied experience from Slack bot and AI API work to a personal bot project."]
 		],
 		panels: [
-			["Problem", "Describe the student or server-management tasks the bot was meant to reduce."],
-			["Approach", "Explain bot commands, AI response flow, monitoring behavior, and code execution or reasoning safeguards."],
-			["Result", "Summarize what the bot can do, how it helps users, and what features are planned next."]
+			["Problem", "Students and server members often need help with repetitive questions, long technical tasks, or engineering problems that benefit from code-aware explanations."],
+			["Approach", "Built the bot around Discord interactions and AI responses so users could ask technical questions, get assistance, and use the server as a practical support workspace."],
+			["Result", "The bot provides a foundation for AI-assisted student support, combining conversation, monitoring goals, and engineering-focused problem solving in one system."]
 		],
 		visuals: [
-			{ placeholder: "Add Discord command screenshot", caption: "Show a real interaction or command menu." },
-			{ placeholder: "Add engineering problem response example", caption: "Show how the bot reasons through a technical task." },
-			{ placeholder: "Add bot architecture or event flow", caption: "Explain how messages, prompts, and responses move through the system." }
+			{ placeholder: "Discord command interaction", caption: "Interaction area for showing a command, prompt, or server conversation." },
+			{ placeholder: "Engineering response example", caption: "Response area for showing how the bot helps reason through a technical task." },
+			{ placeholder: "Bot event flow", caption: "Architecture area for showing how messages, prompts, and AI responses move through the system." }
 		],
 		timeline: [
-			["Context", "Add why the bot was useful for students or server management."],
-			["Build", "Add Discord integration, AI flow, and command design."],
-			["Validate", "Add test prompts, moderation checks, or response quality checks."],
-			["Takeaway", "Add what you learned about AI bots and practical automation."]
+			["Context", "Built the bot to make Discord more useful for technical help, server support, and student workflows."],
+			["Build", "Connected Discord bot behavior with AI response logic and shaped the project around practical assistance."],
+			["Validate", "Tested the bot with technical prompts and general support scenarios to evaluate response usefulness."],
+			["Takeaway", "Learned how AI bots need reliable conversation flow, thoughtful prompting, and clear user goals to be useful."]
 		]
 	}
 };
