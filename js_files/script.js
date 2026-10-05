@@ -207,7 +207,7 @@ const researchDetails = {
 	},
 	"perl": {
 		title: "Propulsion and Energy Research Lab (PERL)",
-		logo: "AxialCombustionChamber.png",
+		logo: "reference_files/AxialCombustionChamber.png",
 		intro: "My current lab is the Propulsion and Energy Research Lab (PERL), where I worked with the Axial Stage Combustion Chamber project and am currently working with the Mach 10 Oblique Detonation project. Both of these projects have taught me lots on propulsion concepts and how to design a rocket engine.",
 		facts: [
 			["Research Area", "Propulsion, combustion, hydrogen flashback, emissions, measurement software."],
@@ -308,7 +308,8 @@ const projectDetails = {
 		visuals: [
 			{ image: "reference_files/solid_propellant_scale.jpeg", alt: "Solid propellant thrust measurement test stand", caption: "In-house thrust measurement scale used to record motor test data and improve test quality." },
 			{ image: "reference_files/SolidworksScale.jpeg", alt: "SolidWorks model of the test stand scale", caption: "SolidWorks model of the test stand used to plan fixture layout, electronics housing, and sensor placement." },
-			{ video: "reference_files/old_solidprop_test.mp4", caption: "Early ignition test that informed later improvements to the scale, setup stability, and test procedure." }
+			{ video: "reference_files/old_solidprop_test.mp4", caption: "Early ignition test that informed later improvements to the scale, setup stability, and test procedure." },
+			{ video: "reference_files/new_solidprop_test.mp4", caption: "New ignition test that showed lots of improvement over test stand, propellant, and chamber design." }
 		],
 	},
 	"digital-ad-ai": {
