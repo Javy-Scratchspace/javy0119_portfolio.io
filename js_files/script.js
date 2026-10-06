@@ -326,11 +326,6 @@ const projectDetails = {
 			["Approach", "Built a Python Tkinter interface that gathers user inputs, sends structured context to Google's Gemma AI model, and returns interpretation that is easier to act on."],
 			["Result", "The tool acts as an AI-assisted workflow for reading market and ad-performance information, helping users compare campaign direction and identify stronger next steps."]
 		],
-		visuals: [
-			{ placeholder: "Tkinter interface", caption: "Interface area for entering campaign or market-trend context." },
-			{ placeholder: "Add sample ad performance input or trend chart", caption: "Use this for data that the AI interprets." },
-			{ placeholder: "AI recommendation output", caption: "Output area where the model returns campaign interpretation and suggested direction." }
-		],
 		timeline: [
 			["Context", "Built the tool to make campaign and market-trend interpretation easier to use in advertising decisions."],
 			["Build", "Created a Tkinter interface, connected it to Google's Gemma AI model, and shaped the inputs around campaign context."],
@@ -351,11 +346,6 @@ const projectDetails = {
 			["Problem", "A bike-mounted generator needs to turn rotational motion into electrical energy while staying compact, mountable, and mechanically stable."],
 			["Approach", "Used electromagnetic induction concepts, 3D printed components, and prototype testing to explore how the generator could be mounted and improved for a bicycle application."],
 			["Result", "The project developed into an electromechanical prototype path that connects induction theory with printed hardware and future output testing."]
-		],
-		visuals: [
-			{ placeholder: "Generator CAD or printed part", caption: "Mechanical design area for showing the printed components and mounting concept." },
-			{ placeholder: "Coil and magnet arrangement", caption: "Induction setup area for explaining how motion creates electrical output." },
-			{ placeholder: "Add voltage test, bike mount, or bench setup", caption: "Use this for measured output or integration proof." }
 		],
 		timeline: [
 			["Context", "Started from the idea of using bike motion as a source for generating electrical power."],
@@ -378,11 +368,6 @@ const projectDetails = {
 			["Approach", "Used an Arduino Uno R3 as the initial controller, developed the project around remote-control behavior, and planned a Raspberry Pi upgrade for more advanced processing and control options."],
 			["Result", "The project became a practical robotics platform for learning embedded systems, control logic, wiring, and the mechanical limits of a moving arm assembly."]
 		],
-		visuals: [
-			{ placeholder: "Robotic arm prototype", caption: "Physical mechanism area for showing joints, structure, and range of motion." },
-			{ placeholder: "Arduino control setup", caption: "Electronics area for showing wiring, controller layout, and signal flow." },
-			{ placeholder: "Remote-control demo", caption: "Operation area for showing how a user controls the arm." }
-		],
 		timeline: [
 			["Context", "Started the project to learn how mechanical arm motion, embedded electronics, and user control fit together."],
 			["Build", "Used Arduino-based control while planning a Raspberry Pi upgrade for a more capable architecture."],
@@ -403,11 +388,6 @@ const projectDetails = {
 			["Problem", "Physics and calculus problems can become difficult to track when equations, variable inputs, and final outputs are handled separately."],
 			["Approach", "Built calculator logic around structured inputs, equation handling, output formatting, and validation so users can move through a problem more clearly."],
 			["Result", "The tool demonstrates physics and calculus processes through a more organized calculation workflow, helping users see how inputs connect to final results."]
-		],
-		visuals: [
-			{ placeholder: "Calculator interface", caption: "Main input and output area for solving physics or calculus problems." },
-			{ placeholder: "Add sample physics calculation", caption: "Use this for an example problem and output." },
-			{ placeholder: "Calculation process", caption: "Process area for showing how the tool connects equations, inputs, and outputs." }
 		],
 		timeline: [
 			["Context", "Built the calculator to practice software logic while making technical problem-solving easier to follow."],
@@ -430,11 +410,6 @@ const projectDetails = {
 			["Approach", "Used Python to parse Excel data, convert selected values into scatter plots, and package the process into an executable workflow."],
 			["Result", "The project makes it faster to turn spreadsheet rows into visual summaries, helping users compare data patterns more quickly."]
 		],
-		visuals: [
-			{ placeholder: "Sample Excel input", caption: "Input area for showing the spreadsheet data the tool reads." },
-			{ placeholder: "Generated scatter plot", caption: "Output area for showing the chart created from the spreadsheet." },
-			{ placeholder: "Executable workflow", caption: "Run workflow area for showing how a user starts the packaged tool." }
-		],
 		timeline: [
 			["Context", "Built the project to reduce the friction of turning spreadsheet data into visual insight."],
 			["Build", "Created the Python parsing and plotting workflow, then packaged it so the tool could run as an executable."],
@@ -456,11 +431,6 @@ const projectDetails = {
 			["Approach", "Built several console programs that rely on loops, conditionals, functions, menus, and structured input/output to solve or simulate different problems."],
 			["Result", "The finished programs demonstrate core C fundamentals through practical examples instead of isolated exercises."]
 		],
-		visuals: [
-			{ placeholder: "Quadratic calculator output", caption: "Console output area for showing inputs, formula handling, and results." },
-			{ placeholder: "Dominoes simulator state", caption: "Console output area for showing game state or simulation logic." },
-			{ placeholder: "Business manager menu", caption: "Console output area for showing program structure and user flow." }
-		],
 		timeline: [
 			["Context", "Built these programs to strengthen C fundamentals through small, focused console applications."],
 			["Build", "Used functions, conditionals, loops, and menu-driven user interaction across different program types."],
@@ -481,11 +451,6 @@ const projectDetails = {
 			["Problem", "Students and server members often need help with repetitive questions, long technical tasks, or engineering problems that benefit from code-aware explanations."],
 			["Approach", "Built the bot around Discord interactions and AI responses so users could ask technical questions, get assistance, and use the server as a practical support workspace."],
 			["Result", "The bot provides a foundation for AI-assisted student support, combining conversation, monitoring goals, and engineering-focused problem solving in one system."]
-		],
-		visuals: [
-			{ placeholder: "Discord command interaction", caption: "Interaction area for showing a command, prompt, or server conversation." },
-			{ placeholder: "Engineering response example", caption: "Response area for showing how the bot helps reason through a technical task." },
-			{ placeholder: "Bot event flow", caption: "Architecture area for showing how messages, prompts, and AI responses move through the system." }
 		],
 		timeline: [
 			["Context", "Built the bot to make Discord more useful for technical help, server support, and student workflows."],
