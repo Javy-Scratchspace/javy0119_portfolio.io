@@ -151,8 +151,7 @@ const researchDetails = {
 		],
 		visuals: [
 			{ image: "reference_files/Eikenberry Connex Box.jpg", alt: "OPA telescoping assembly connex enclosure", caption: "Connex enclosure used as part of the telescope assembly planning and protection concept." },
-			{ image: "reference_files/EikenberryConnex.png", alt: "OPA design render", caption: "Design render showing the enclosure concept and how roof or deployment features could integrate with the assembly." },
-			{ placeholder: "Roof support concept", caption: "Concept slot for showing how the roof, supports, and deployed telescope assembly relate mechanically." }
+			{ image: "reference_files/EikenberryConnex.png", alt: "OPA design render", caption: "Design render showing the enclosure concept and how roof or deployment features could integrate with the assembly." }
 		],
 		timeline: [
 			["Context", "Supported an optics research project where the mechanical enclosure had to protect and support telescope assembly operation."],
@@ -176,9 +175,7 @@ const researchDetails = {
 			["Result", "The work supported both the analytical and hardware sides of the lab by contributing to orbital workflow understanding and producing drawings that helped define electronics housing needs."]
 		],
 		visuals: [
-			{ image: "reference_files/Screenshot 2024-11-03 170241.png", alt: "ASRL electronics housing drawing", caption: "Electronics housing drawing used to support lab hardware planning and documentation." },
-			{ placeholder: "ROSS workflow visual", caption: "Concept slot for showing orbital analysis workflow, path plots, or simulation outputs." },
-			{ placeholder: "Electronics housing revision", caption: "Concept slot for showing how housing requirements and drawing revisions evolved." }
+			{ image: "reference_files/Screenshot 2024-11-03 170241.png", alt: "ASRL electronics housing drawing", caption: "Electronics housing drawing used to support lab hardware planning and documentation." }
 		],
 		timeline: [
 			["Context", "Joined ASRL work focused on astrodynamics, orbital path efficiency, and robotics-related support hardware."],
