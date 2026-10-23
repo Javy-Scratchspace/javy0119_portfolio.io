@@ -288,6 +288,20 @@ const projectDetails = {
 			["Takeaway", "As a Payloads team member and consistent director throughout my years with SHPE, I contributed to designing, revising, and improving different plans/goals by breaking larger goals into clear, trackable tasks. Even when a plan didn't work perfectly on the first attempt, I adjusted quickly, executed the next iteration, and verified each milestone before moving forward. I hold my work to a high standard and focus on delivering results that are genuinely solid - not just 'good enough'."]
 		]
 	},
+	"fighters-arena": {
+		title: "Fighters Arena",
+		logo: "reference_files/fighters_arena_dashboard.png",
+		intro: "I built a software that was capable of using pre-generated fighters and simulate fights between them. The initial purpose of this software was due to a curiosity in determining how games determine that the health, damage, and critical chance of any fighter/player was balanced compared to the other players in the game. I ran randomized simulations where the probability p represents the probability that a fighter is able to inflict a critical damage hit, but that critical damage is an amplified version of the original damage that is amplified by 100 - p %. This project further reassured me of the importance in object-oriented programming and taught me how to cross verify simulations.",
+		facts: [
+			["Category", "Personal engineering project, simulation, statistics, machine learning."],
+			["Tools / Skills", "C++, strain gauges, HX711 load scale, SolidWorks, propellant casting, test stand design."],
+			["Main Impact Points", "Developed a software that can be used for entertainment and determining if a mix of health-damage-critical hit is balanced.", "Implemented object-oriented programming techniques and provided descriptive structure of program and how it works.", "Ran the website through a deployment in Railway."],
+			["Future Scope", "I plan on running more simulations but with randomized data. This will allow me to better understand the impact of the player attributes. Furthermore, I plan on using that data to train a neural network so that it can be fed a pool of fighters and spit out the probability that any fighter is capable of winning."]
+		],
+		visuals: [
+			{ image: "reference_files/fighters_arena_dashboard.png", alt: "The developed dashboard.", caption: "The final result has been finished and deployed. It works to the best of its abilities and tracks user money amount. Future implementation of AI neural networks is being worked on."}
+		]
+	},
 	"solid-propellant": {
 		title: "Solid Propellant Motor Project",
 		logo: "reference_files/solid_propellant_scale.jpeg",
