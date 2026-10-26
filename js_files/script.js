@@ -32,7 +32,7 @@ const experienceDetails = {
 	"well-bilt": {
 		title: "Engineering Intern - Well Bilt Industries",
 		logo: "reference_files/WellBiltLogo.png",
-        intro: "This internship focused on building hangar doors and developing tools to help engineers. During this internship, I worked with SolidWorks to generate drawings, Risa to conduct analyses that determine if the door panels can withstand wind loads, Python to build automation tools, Beamline to generate commands for machines to drill out hangar door beams, and Messer Nesting to develop laser cut metal parts. I worked with customers and Engineers to ensure that the product is delivered in a satisfactory way, ensuring that not only the technical requirements were met, but also the desired layout of the project is handled properly.",
+        intro: "This internship focused on building hangar doors and developing tools to help engineers. During this internship, I worked with SolidWorks to generate drawings, RISA to conduct analyses that determine if the door panels can withstand wind loads, Python to build automation tools, Beamline to generate commands for machines to drill out hangar door beams, and Messer Nesting to develop laser cut metal parts. I worked with customers and Engineers to ensure that the product is delivered in a satisfactory way, ensuring that not only the technical requirements were met, but also the desired layout of the project is handled properly.",
         facts: [
 			["Role", "Engineering Intern"],
 			["Focus Areas", "Python automation, RISA modeling, SolidWorks drawings, manufacturing support."],
@@ -45,13 +45,13 @@ const experienceDetails = {
 		],
 		visuals: [
 			{ image: "reference_files/Python Cut List.jpeg", alt: "Python cut list automation example", caption: "Automated cut list program that displays the results after performing a merge and split of beam orders to maintain beam length orders (normally 20') and ensure all materials are ordered." },
-			{ image: "reference_files/General Door Calcs Excel Sheet.jpeg", alt: "Excel door calculation sheet example", caption: "Developed an Excel database that takes in door dimensions and panel count and spits out the Risa file best used to copy from. Also conducts calculations given wind speed and determines if the panel with the dimensions can handle the stresses." },
-			{ image: "reference_files/Risa Strctural Analysis.jpeg", alt: "Risa Structural Analysis grid points example", caption: "Example of hangar door via Risa Structural Analysis program. These grid points define beam connections where beams are connected via clips. The software produces a visual that shows the doors weakest and strongest points." },
+			{ image: "reference_files/General Door Calcs Excel Sheet.jpeg", alt: "Excel door calculation sheet example", caption: "Developed an Excel database that takes in door dimensions and panel count and spits out the RISA file best used to copy from. Also conducts calculations given wind speed and determines if the panel with the dimensions can handle the stresses." },
+			{ image: "reference_files/RISA Strctural Analysis.jpeg", alt: "RISA Structural Analysis grid points example", caption: "Example of hangar door via RISA Structural Analysis program. These grid points define beam connections where beams are connected via clips. The software produces a visual that shows the doors weakest and strongest points." },
             { image: "reference_files/WellBiltFinalResult.png", alt: "Final Door Design Example", caption: "Example of a biparting hangar door being finally built."}
 		],
 		timeline: [
-			["Build", "Use Risa to ensure hangar door beams handle the wind loads with a sufficient safety factor of 10, SolidWorks to develop the drawings and ensure fast manufacturing processes, and Excel to develop cut lists necessary for building hangar doors."],
-			["Validation", "Validated Risa calculations by determining wind loads at the center point of each door frame and hand calculating the deflections."],
+			["Build", "Use RISA to ensure hangar door beams handle the wind loads with a sufficient safety factor of 10, SolidWorks to develop the drawings and ensure fast manufacturing processes, and Excel to develop cut lists necessary for building hangar doors."],
+			["Validation", "Validated RISA calculations by determining wind loads at the center point of each door frame and hand calculating the deflections."],
 			["Takeaway", "I learned how to take a design from concept to reality. I was able to assist and expedite the design and manufacturing processes for building client solutions while also building automation tools that assist engineers in purchasing materials by reducing time to generate cut lists by 47%."]
 		]
 	},
@@ -80,11 +80,11 @@ const experienceDetails = {
 	"lockheed-martin": {
 		title: "Systems Engineer - Lockheed Martin",
 		logo: "reference_files/lm_logo.jpg",
-		intro: "As a Systems Engineer with Lockheed Martin working under the ARISE Modeling Based Systems Engineering (MBSE) team, I focused on using Cameo to model stakeholder projects and Python to build automation projects within Cameo. I used Regex and AI-based parsing to build a plugin that can parse code files for different project requirements. I implemented several methodologies and data structures to help automate the search and retrieval process of Cameo packages and GitLab files. Overall, I helped increase the productivity of the team members and of the stakeholders.",
+		intro: "As a Systems Engineer with Lockheed Martin working under the ARISE Modeling Based Systems Engineering (MBSE) team, I focused on using Cameo to model stakeholder projects and Python to build automation projects within Cameo. I used regular expression and AI-based parsing to build a plugin that can parse code files for different project requirements. I implemented several methodologies and data structures to help automate the search and retrieval process of Cameo packages and GitLab files. Overall, I helped increase the productivity of the team members and of the stakeholders.",
 		facts: [
 			["Role", "Systems Engineer"],
 			["Focus Areas", "Cameo Systems Modeler, plugin development, Python backend logic, C++ simulation review."],
-			["Main Impact Points", "Enhanced in-house Cameo plugins to automate Engineering Processes using Python, reducing model generation and simulation timeframes from days to hours.", "Assisted in the generation of models using Cameo Systems Modeler that demonstrate project simulations.", "Implemented several CS concepts that reduced human error by allowing the program to conduct searches for packages and GitLab files, reducing model error by 37%.", "Testing different regular expression (regex) methods that capture desired parameters more accurately, increasing coverage of parameters by 25%.", "Implemented AI-based parsing to improve regex parsing, allowing for the plugin to adhere to different coding standard, improving parsing flexibility, and increasing accuracy of capturing parameters."]
+			["Main Impact Points", "Enhanced in-house Cameo plugins to automate Engineering Processes using Python, reducing model generation and simulation timeframes from days to hours.", "Assisted in the generation of models using Cameo Systems Modeler that demonstrate project simulations.", "Implemented several CS concepts that reduced human error by allowing the program to conduct searches for packages and GitLab files, reducing model error by 37%.", "Testing different regular expression methods that capture desired parameters more accurately, increasing coverage of parameters by 25%.", "Implemented AI-based parsing to improve regular expression parsing, allowing for the plugin to adhere to different coding standard, improving parsing flexibility, and increasing accuracy of capturing parameters."]
 		],
 		panels: [
 			["Problem", "Other programs within Lockheed Martin need a way to model their projects such that others can read it well and it accurately describes what the project is focused on."],

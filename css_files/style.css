@@ -873,8 +873,8 @@ li {
 }
 
 .download-item {
-    background: transparent;
-    color: var(--navy-deep);
+    background: var(--navy-deep);
+    color: #ffffff;
     padding: 13px 24px;
     border-radius: 4px;
     text-decoration: none;
@@ -886,8 +886,8 @@ li {
 }
 
 .download-item:hover {
-    background: var(--navy-deep);
-    color: #ffffff;
+    background: var(--thrust-dark);
+    transform: translateY(-3px);
 }
 
 footer {
