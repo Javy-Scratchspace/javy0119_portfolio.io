@@ -32,7 +32,7 @@ const experienceDetails = {
 	"well-bilt": {
 		title: "Engineering Intern - Well Bilt Industries",
 		logo: "reference_files/WellBiltLogo.png",
-        intro: "This internship focused on building hangar doors and developing tools to help engineers. During this internship, I worked with SolidWorks to generate drawings, Risa to conduct analyses that determine if the door panels can withstand wind loads, python to build automation tools, Beamline to generate commands for machines to drill out hangar door beams, and Messer Nesting to develop laser cut metal parts. I worked with customers and Engineers to ensure that the product is delivered in a satisfactory way, ensuring that not only the technical requirements were met, but also the desired layout of the project is handled properly.",
+        intro: "This internship focused on building hangar doors and developing tools to help engineers. During this internship, I worked with SolidWorks to generate drawings, Risa to conduct analyses that determine if the door panels can withstand wind loads, Python to build automation tools, Beamline to generate commands for machines to drill out hangar door beams, and Messer Nesting to develop laser cut metal parts. I worked with customers and Engineers to ensure that the product is delivered in a satisfactory way, ensuring that not only the technical requirements were met, but also the desired layout of the project is handled properly.",
         facts: [
 			["Role", "Engineering Intern"],
 			["Focus Areas", "Python automation, RISA modeling, SolidWorks drawings, manufacturing support."],
@@ -80,7 +80,7 @@ const experienceDetails = {
 	"lockheed-martin": {
 		title: "Systems Engineer - Lockheed Martin",
 		logo: "reference_files/lm_logo.jpg",
-		intro: "As a Systems Engineer with Lockheed Martin working under the ARISE Modeling Based Systems Engineering (MBSE) team, I focused on using Cameo to model stakeholder projects and Python to build automation projects within Cameo. I used Regex and AI based parsing to build a plugin that can parse code files for different project requirements. I implemented several methodologies and data structures to help automate the search and retrieval process of Cameo packages and GitLab files. Overall, I helped increase the productivity of the team members and of the stakeholders.",
+		intro: "As a Systems Engineer with Lockheed Martin working under the ARISE Modeling Based Systems Engineering (MBSE) team, I focused on using Cameo to model stakeholder projects and Python to build automation projects within Cameo. I used Regex and AI-based parsing to build a plugin that can parse code files for different project requirements. I implemented several methodologies and data structures to help automate the search and retrieval process of Cameo packages and GitLab files. Overall, I helped increase the productivity of the team members and of the stakeholders.",
 		facts: [
 			["Role", "Systems Engineer"],
 			["Focus Areas", "Cameo Systems Modeler, plugin development, Python backend logic, C++ simulation review."],
@@ -119,7 +119,7 @@ const researchDetails = {
 			["Outcome", "Presented the research findings through a poster, strengthened my understanding of materials characterization, and built a foundation in Python-based data analysis and quantum concepts that supported later technical work."]
 		],
 		visuals: [
-			{ image: "reference_files/IRP_Poster_Photo.jpg", alt: "FSU research poster presentation", caption: "Presented my poster on one dimensional organic metal halide hybrid perovskites." },
+			{ image: "reference_files/IRP_Poster_Photo.jpg", alt: "FSU research poster presentation", caption: "Presented my poster on one-dimensional organic metal halide hybrid perovskites." },
 			{ image: "reference_files/Me n Jarek.jpeg", alt: "In the lab with a fellow researcher", caption: "Me with my mentor Jarek." },
 			{ image: "reference_files/FSU_POSTER.png", caption: "Full poster on research conducted related to manufacturing white LED's." },
             { image: "reference_files/ColorGraph.png", caption: "Color graph representing color emission and emission wavelength of DMEDA Lead(II) Bromide." },
