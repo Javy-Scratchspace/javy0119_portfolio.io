@@ -839,7 +839,7 @@ li {
 /* Contact & downloads                                                    */
 /* ---------------------------------------------------------------------- */
 
-.contact-info {
+.outreach-info {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -847,7 +847,7 @@ li {
     margin-top: 20px;
 }
 
-.contact {
+.outreach {
     background: var(--navy-deep);
     color: #ffffff;
     padding: 14px 26px;
@@ -859,7 +859,7 @@ li {
     font-size: 0.9em;
 }
 
-.contact:hover {
+.outreach:hover {
     background: var(--thrust-dark);
     transform: translateY(-3px);
 }
