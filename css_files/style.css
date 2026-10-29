@@ -650,13 +650,9 @@ li {
 .detail-summary-grid,
 .detail-section-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: 1fr;
     gap: 16px;
     margin: 22px 0;
-}
-
-.detail-stack {
-    grid-template-columns: 1fr;
 }
 
 .detail-fact,
