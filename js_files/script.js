@@ -28,7 +28,7 @@ const detailProfileVisibility = {
 	}
 };
 
-const experienceDetails = {
+const industryDetails = {
 	"well-bilt": {
 		title: "Engineering Intern - Well Bilt Industries",
 		logo: "reference_files/WellBiltLogo.png",
@@ -46,7 +46,7 @@ const experienceDetails = {
 		visuals: [
 			{ image: "reference_files/Python Cut List.jpeg", alt: "Python cut list automation example", caption: "Automated cut list program that displays the results after performing a merge and split of beam orders to maintain beam length orders (normally 20') and ensure all materials are ordered." },
 			{ image: "reference_files/General Door Calcs Excel Sheet.jpeg", alt: "Excel door calculation sheet example", caption: "Developed an Excel database that takes in door dimensions and panel count and spits out the RISA file best used to copy from. Also conducts calculations given wind speed and determines if the panel with the dimensions can handle the stresses." },
-			{ image: "reference_files/RISA Strctural Analysis.jpeg", alt: "RISA Structural Analysis grid points example", caption: "Example of hangar door via RISA Structural Analysis program. These grid points define beam connections where beams are connected via clips. The software produces a visual that shows the doors weakest and strongest points." },
+			{ image: "reference_files/RISAStrcturalAnalysis.jpeg", alt: "RISA Structural Analysis grid points example", caption: "Example of hangar door via RISA Structural Analysis program. These grid points define beam connections where beams are connected via clips. The software produces a visual that shows the doors weakest and strongest points." },
             { image: "reference_files/WellBiltFinalResult.png", alt: "Final Door Design Example", caption: "Example of a biparting hangar door being finally built."}
 		],
 		timeline: [
@@ -167,11 +167,11 @@ const researchDetails = {
 		facts: [
 			["Research Area", "Astrodynamics, orbital path efficiency, robotics support hardware."],
 			["Mentor / Lab", "Professor Elgohary, Aerospace Engineering Department at UCF."],
-			["Main Impact Points", "Used ROSS in support of orbital path efficiency research.", "Assisted with electronics housing drawings for lab hardware.", "Connected analysis-focused research with mechanical documentation and hardware support."]
+			["Main Impact Points", "Used SolidWorks in support of designing electronics housing for commercial deployment.", "Assisted with electronics housing drawings for lab hardware.", "Connected analysis-focused research with mechanical documentation and hardware support."]
 		],
 		panels: [
 			["Problem", "Orbital path efficiency research requires reliable analysis workflows, while lab hardware also needs clear housing drawings so electronics can be protected, mounted, and revised."],
-			["Approach", "Used ROSS to support orbital path efficiency research while also helping translate hardware needs into electronics housing drawings and design documentation."],
+			["Approach", "Learned about the applications of ROSS and how it can be integrated with robotics hardware to simulate flight trajectories."],
 			["Result", "The work supported both the analytical and hardware sides of the lab by contributing to orbital workflow understanding and producing drawings that helped define electronics housing needs."]
 		],
 		visuals: [
@@ -179,7 +179,7 @@ const researchDetails = {
 		],
 		timeline: [
 			["Context", "Joined ASRL work focused on astrodynamics, orbital path efficiency, and robotics-related support hardware."],
-			["Analysis", "Used ROSS to support understanding of orbital path efficiency workflows and research objectives."],
+			["Analysis", "Learned ROSS, a software used to support understanding of orbital path efficiency workflows and research objectives. Used SolidWorks to design an electronics housing used for potential commercial deployment."],
 			["Output", "Assisted with electronics housing drawings that helped document hardware needs for the lab."],
 			["Takeaway", "Built experience at the intersection of aerospace research, analysis tools, and technical drawing."]
 		]
@@ -299,7 +299,8 @@ const projectDetails = {
 			["Future Scope", "I plan on running more simulations but with randomized data. This will allow me to better understand the impact of the player attributes. Furthermore, I plan on using that data to train a neural network so that it can be fed a pool of fighters and spit out the probability that any fighter is capable of winning."]
 		],
 		visuals: [
-			{ image: "reference_files/fighters_arena_dashboard.png", alt: "The developed dashboard.", caption: "The final result has been finished and deployed. It works to the best of its abilities and tracks user money amount. Future implementation of AI neural networks is being worked on."}
+			{ image: "reference_files/fighters_arena_dashboard.png", alt: "The developed dashboard.", caption: "The final result has been finished and deployed. It works to the best of its abilities and tracks user money amount. Future implementation of AI neural networks is being worked on." },
+			{ image: "reference_files/BasicCoefficientPredictionFightersArena.png", alt: "Graph demonstrating predicted vs simulated data.", caption: "These are the results gathered after simulating 10 fighters with the same health but different probabilities ranging for 10-90% at intervals of 10% over 1000 brawls. A brawl is defined as each fighter fighting every other fighter, so every fighter has the same number of fights overall. The predicted data was gathered by determining an average coefficient applied to the simulated data." }
 		]
 	},
 	"solid-propellant": {
@@ -678,7 +679,7 @@ function showExperienceDetail(key) {
 		return;
 	}
 
-	showDetail(key, experienceDetails, detailOptions.experience);
+	showDetail(key, industryDetails, detailOptions.experience);
 }
 
 function showResearchDetail(key) {
@@ -805,7 +806,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 	const key = window.location.hash.replace("#", "");
 
-	if (key && experienceDetails[key] && isDetailProfileEnabled("experience", key)) {
+	if (key && industryDetails[key] && isDetailProfileEnabled("experience", key)) {
 		showExperienceDetail(key);
 	}
 
